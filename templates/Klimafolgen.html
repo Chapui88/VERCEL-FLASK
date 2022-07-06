@@ -1,0 +1,532 @@
+<div id="sidebar-wrapper">
+                <ul class="sidebar">
+                    <li style="text-align: left"> <a href="#Klimafolgen im Kreis Viersen"><b>Klimafolgen im Kreis Viersen</b></a> </li>
+                    
+                    <li style="text-align: right"> <a href="#Duerre">Entwicklung der Dürre</a> </li>
+                   
+                    <li style="text-align: right"> <a href="#Niedrigwasserstände">Entwicklung der Niedrigwasserstände</a> </li>
+                    
+                    <li style="text-align: right"> <a href="#GW">Entwicklung der Grundwasserstände</a> </li>
+                    
+                    <li style="text-align: right"> <a href="#Frucht">Entwicklung der Fruchtfolge</a> </li>
+                 </ul> 
+</div>
+
+
+{% extends "layout.html" %}
+{% block content %}
+
+   <div id= "Klimafolgen" class="card mb-4 ml-auto mr-auto" style="width: 100%; margin-top: 140px " data-aos="zoom-in">
+      <div class="card-body">
+                
+                <div>
+                    <h4 class="text-left">
+                     		Klimafolgen im Kreis Viersen 
+                    </h4>   
+                </div>
+                <p>
+                Das Klima ist das Ergebnis eines komplexen Zusammenspiels aus Prozessen auf dem Land, der Ozeane und der Atmosphäre. 
+                Hierzu gehören auch jahreszeitliche Vegetationswechsel, Wechselwirkungen mit Prozessen im Boden oder mit Fließ- und stehenden Gewässern.
+                Da diese Wechselwirkungen nicht direkt durch meteorologischer Größen erfasst werden können,
+                werden diese Prozesse als <em>Klimafolgen</em> beschrieben.
+                Klimafolgen können vorallem anhand der hydrologischen Veränderungen an Land (Wasserstände in Fließgewässern) und im Boden (Grundwasserstände oder Bodenfeuchte) erfasst werden.
+                </p>
+         
+    </div>
+</div> 
+
+
+
+
+        <div id="Duerre" class="card mb-4 ml-auto mr-auto" style="width: 100%" data-aos="fade-left">
+            <div class="card-body">
+            
+                <div >
+                 <div class="header-5">
+                <h4 class="text-left">
+                Entwicklung der Dürre im Kreis Viersen im Zeitraum von 1951 – 2020 als Bodenfeuchteindex
+                </h4>   
+            </div>
+            
+            </div>
+
+
+          
+                <p>
+                Als Dürre wird ein extremer über einen längeren Zeitraum vorherrschender Zustand bezeichnet, 
+                in dem der Natur, weniger Wasser zur Verfügung steht als erforderlich. 
+                
+                Zur Abbildung der Dürreentwicklung im Kreis Viersen wurden die Daten des Dürremonitor des Helmholtz Zentrum für Umweltforschung (UFZ) herangezogen.
+                Auf Basis eines mesoskaligem hydrologischen Models, liefert der UFZ-Dürremonitor täglich fächendeckende Informationen zum Bodenfeuchtezustand.              
+
+                Die folgende Darstellung zeigt den Bodenfeuchteindex (SMI - soil moisture index, nach Zink et al. 2015) des Oberbodens, also bis 25 cm Tiefe.  
+                Eine Dürre wird hierbei als Abweichung vom langjährigen Erwartungswert  in einem sogenannten Perzentilansatz geschätzt. 
+                Für weitere Informationen siehe <a href="https://www.ufz.de/index.php?de=37937" target="_blank">UFZ Dürremonitor Deutschland</a>.
+                </p>                
+  
+  
+        <div class="wrapper">
+              
+            <div class="outer_img_left">                     
+                
+                <div class="img" id="chart7" style="display:block"></div>
+            </div>
+                 
+                
+               
+                <p class="card-text">
+                Die dargestellte Dürreentwicklung von 1951 - 2020 bestätigt die Beobachtung, dass es zwar im Laufe der Jahrzehnte 
+                immer zu Dürren auch in mehreren aufeinanderfolgenden Jahren gekommen ist, jedoch eine deutliche Zunahme der 
+                Intensität in den letzten 10 Jahren beobachtet werden kann. 
+                Diese Beobachtung korreliert ebenso mit der Anzahl an Hitzetagen und der kontinuierlich steigenden Lufttemperatur, 
+                wie auch mit den nachfolgend dargestellten Niedrigwasserständen in den Fließgewässern und den Grundwasserständen. 
+                die zeigt Die deutlichste 018 hat erstmalig seit 1976 wieder eine großflächige Dürre in Deutschland sowohl 
+                Das Maximum der Dürreausprägungen fand in den sehr warmen und trockenen Jahren 2018 und 2019 statt und beeinflusste deutlich das nochfolgende Jahr 2020. 
+                 </div>                    
+             </div>
+             </div>
+                
+		</div>
+        
+        
+        <div class="card mb-4 ml-auto mr-auto" style="width: 100%" data-aos="fade-left">
+            <div class="card-body">
+   
+                <div id="Niedrigwasserstände" class="header-5">
+                <h5 class="text-left">
+                Entwicklung der Niedrigwasserstände ausgewählter Pegel im Kreis Viersen
+                </h5>   
+                </div>
+                
+                <p >
+                Die wesentlichen Fließgewässer im Kreis Viersen sind die Niers, die Nette und die Schwalm. 
+                 Hinzu kommen mehrere kleinere bis mittelgroße Nebengewässer und vor allem im Einzugsgebiet der Niers 
+                eine Vielzahl an Entwässerungsgräben.
+                <p>
+                    
+                    
+                <p>
+                    Die nachfolgende linksstehende Animation stellt die Entwicklung des Niedrigwasserstände von ausgewählten Pegeln im Kreis Viersen 
+                    im Zeitraum von 1950 - 2020 dar. Bei der Darstellung handelt es sich um eine vereinfachte statistische Analyse von 
+                    Niedrigwasserkenngrößen (nach DWA-M 541). Dargestellt werden zum einen die Anzahl der Tage pro Jahr oder Jahreszeit, 
+                    die einen bestimmten Schwellenwert unterschreiten. Als Schwellenwert wurde das 25-Quantil der Unterschreitungsdauerlinie gewählt. 
+                    Die Unterschreitungsdauerlinie ist die fortlaufende Aufsummierung der Häufigkeiten an der ein bestimmter Abfluss unterschritten 
+                    wird. Die Häufigkeit wann der Abfluss im Gewässer den Schwellenwert unterschreitet ist alleine nicht aussagekräftig genug um 
+                    zu beurteilen, ob es sich beispielsweise um ein trockenes Jahr handelt. Aus diesem Grund wird zum anderen das Abflussdefizit 
+                    im jeweiligen Jahr oder in der jeweiligen Jahreszeit dargestellt. Das Abflussdefizit ist das Volumen der täglichen Abflüsse, 
+                    die den Schwellenwert unterschreiten. Dieser Wert trägt zur Beurteilung bei, wie stark der Schwellenwert unterschritten wurde 
+                    und wie groß das Abflussdefizit in einer Trockenperiode war. 
+                <p>
+                    
+                 <p> Die nachfolgende rechtsstehende Animation stellt die Abflussdaten von ausgewählten Pegeln im Kreis Viersen im 
+                 Zeitraum von 1950 - 2020 dar. Neben dem durchschnittlichen Abfluss pro Tag, enthalten die Gangliniendiagramme zusätzliche 
+                 Gewässerkundliche Hauptwerte:
+                </p>
+                
+    <div class="wrapper">
+       
+      <div class="outer_img_two_left">
+                 
+               <div class="img_two" id="chart6" style="display:flex;"></div>
+               <div class="img_two" id="chart18" style="display:none; "></div>
+               <div class="img_two" id="chart19" style="display:none; "></div>
+               <div class="img_two" id="chart24" style="display:none; "></div>
+       </div>
+       
+      <div class="outer_img_two_right">
+                 
+               <div class="img_two" id="chart20" style="display:flex;"></div>
+               <div class="img_two" id="chart21" style="display:none; "></div>
+               <div class="img_two" id="chart22" style="display:none; "></div>
+               <div class="img_two" id="chart25" style="display:none; "></div>
+        
+       </div>
+             
+            <div class="buttons_frame">
+            <input class="buttons" id="Button7_1" type="button" value="Pegel Boisheim - Nette" onclick="switchVisible121();"/>
+            <input class="buttons" id="Button7_3" type="button" value="Pegel Langenfeld - Nette" onclick="switchVisible15();"/>
+            <input class="buttons" id="Button7_2" type="button" value="Pegel Oedt - Niers" onclick="switchVisible13();"/>
+            <input class="buttons" id="Button7_4" type="button" value="Pegel Pannenmühle - Schwalm" onclick="switchVisible14();"/>
+            </div>
+   </div>     
+   
+                <p id="n1" class="card-text" style="display:block">
+                <b>Nette</b><br>
+            
+                Wie in den vorherigen Animationen dargestellt konnten am Pegeln Boisheim an der Nette bereits ab dem Jahr 2016 durchgängig 
+                reduzierte Abflüsse beobachtet werden. Diese fanden ihr Minimum in den sehr warmen und trockenen Jahren 2018 und 2019. 
+                In diesen Jahren gab es eine Häufung an Niedrigwassertagen am Pegel Boisheim. Lediglich die Jahre 2007 und 1989 weißen eine höhere Anzahl an 
+                Niedrigwassertagen auf. Das maximale jemals festgestellte Abflussdefizit am Pegel Boisheim ergab sich im Jahr 2019. In diesem Jahr war die Nette 
+                zeitweise so stark von Niedrigwasser betroffen, dass der Unterlauf (flussabwärts der Netteseen) gänzlich trockengefallen ist. 
+                Neben dem ausbleibenden Zufluss aus Niederschlag während Trockenperioden, tragen die steigenden Grundwasserentnahmen 
+                (etwa zu Bewässerungszecken) im Netteeinzugsgebiet mit entsprechend fallenden Grundwasserständen in Trocken- und Hitzeperioden, 
+                zur besonderen Vulnerabilität der Nette gegenüber Trockenperioden bei. Auch direkte Entnahmen aus dem Fließgewässer sind 
+                als verstärkender Effekt zu nennen.                 
+                </p>   
+       
+  
+                <p id="n4" class="card-text" style="display:none">
+                <b>Nette</b><br>
+            
+                Wie in den vorherigen Animationen dargestellt konnten am Pegeln Langenfeld an der Nette bereits ab Mitte des Jahres 2016 durchgängig 
+                reduzierte Abflüsse beobachtet werden. Diese fanden ihr Minimum in den sehr warmen und trockenen Jahren 2018, 2019 und 2020. 
+                In diesen Jahren gab es vor allem im Sommer eine Häufung an Niedrigwassertagen am Pegel Langenfeld. 
+                Das Jahr 2019 weißt im Sommer sowohl die maximale Anzahl an Unterschreitungstagen als auch das maximale jemals festgestellte Abflussdefizit am Pegel Langenfeld auf. 
+                In diesem Jahr war die Nette zeitweise so stark von Niedrigwasser betroffen, dass der Unterlauf (flussabwärts der Netteseen) gänzlich trockengefallen ist. 
+                Neben dem ausbleibenden Zufluss aus Niederschlag während Trockenperioden, tragen die steigenden Grundwasserentnahmen 
+                (etwa zu Bewässerungszecken) im Netteeinzugsgebiet mit entsprechend fallenden Grundwasserständen in Trocken- und Hitzeperioden, 
+                zur besonderen Vulnerabilität der Nette gegenüber Trockenperioden bei. Auch direkte Entnahmen aus dem Fließgewässer sind 
+                als verstärkender Effekt zu nennen.                 
+                </p>                  
+                
+                <p id="n2" class="card-text" style="display:none">
+                <b>Niers</b><br>
+            
+               Die Niers ist, wie an den Daten des Pegels Oedt beobachtet werden kann, weniger anfällig gegenüber Trockenperioden. 
+               Dies liegt zum einen daran, dass die Nette im Quellbereich durch Sümpfungswasser aus dem Braunkohletagebau gespeist wird und somit 
+               weitgehend unabhängig von niederschlagsinduzierten Abflüssen und Grundwasserzuströmen ist. Auch der Zufluss der großen Kläranlage 
+               Mönchengladbach-Neuwerk kurz vor der Kreisgrenze trägt zu einem relativ konstanten Abfluss bei. Dennoch kann auch hier eine Abnahme 
+               der Wassermengen ab dem Jahr 2016 beobachtet werden. Deutlich zeigten sich die Auswirkungen der Trockenheit und die gleichzeitig gestiegenen 
+               Grundwasser- und Gewässerentnahmen an den zahlreichen Bächen und Gräben im Einzugsgebiet der Niers.      
+                </p>                             
+           
+                <p id="n3" class="card-text" style="display:none">
+                <b>Schwalm</b><br>
+                Die Schwalm ist hinsichtlich ihrer Vulnerabilität gegenüber Trockenperioden zwischen Nette und Niers einzuordnen. 
+                Auch sie wird in Ihrem Quellbereich durch Sümpfungswasser gestützt (direkte Einleitung und Grundwasserinfiltration). 
+                Auch am Pegel Pannenmühle der Schwalm konnten ab dem Jahr 2016 deutlich niedrigere Abflussmengen festgestellt werden. 
+                </p>   
+                   
+                   
+                <script type="text/javascript">
+                function switchVisible121() {
+                            if (document.getElementById('chart6')) {
+                
+                                if (document.getElementById('chart6').style.display == 'none') {
+                                    document.getElementById('chart20').style.display = 'block';
+                                    document.getElementById('chart6').style.display = 'block';
+                                    document.getElementById('n1').style.display = 'block';
+                                    document.getElementById('chart18').style.display = 'none';
+                                    document.getElementById('chart19').style.display = 'none';
+                                    document.getElementById('chart21').style.display = 'none';
+                                    document.getElementById('chart22').style.display = 'none';
+                                    document.getElementById('n2').style.display = 'none';
+                                    document.getElementById('n3').style.display = 'none';
+                                    document.getElementById('n4').style.display = 'none';
+                                    document.getElementById('chart24').style.display = 'none';
+                                    document.getElementById('chart25').style.display = 'none';
+                                }
+                                else {
+                                    document.getElementById('chart6').style.display = 'block';
+                                    document.getElementById('chart20').style.display = 'block';
+                                    document.getElementById('n1').style.display = 'block';
+                                    document.getElementById('chart18').style.display = 'none';
+                                    document.getElementById('chart19').style.display = 'none';
+                                    document.getElementById('chart21').style.display = 'none';
+                                    document.getElementById('chart22').style.display = 'none';
+                                    document.getElementById('n2').style.display = 'none';
+                                    document.getElementById('n3').style.display = 'none';
+                                    document.getElementById('n4').style.display = 'none';
+                                    document.getElementById('chart24').style.display = 'none';
+                                    document.getElementById('chart25').style.display = 'none';
+                                    }}}
+                </script>
+
+                <script type="text/javascript">
+                function switchVisible15() {
+                            if (document.getElementById('chart24')) {
+                
+                                if (document.getElementById('chart24').style.display == 'none') {
+                                    document.getElementById('chart25').style.display = 'block';
+                                    document.getElementById('chart24').style.display = 'block';
+                                    document.getElementById('n4').style.display = 'block';
+                                    document.getElementById('chart18').style.display = 'none';
+                                    document.getElementById('chart19').style.display = 'none';
+                                    document.getElementById('chart21').style.display = 'none';
+                                    document.getElementById('chart22').style.display = 'none';
+                                    document.getElementById('n2').style.display = 'none';
+                                    document.getElementById('n3').style.display = 'none';
+                                    document.getElementById('n1').style.display = 'none';
+                                    document.getElementById('chart6').style.display = 'none';
+                                    document.getElementById('chart20').style.display = 'none';
+                                }
+                                else {
+                                    document.getElementById('chart24').style.display = 'block';
+                                    document.getElementById('chart25').style.display = 'block';
+                                    document.getElementById('n1').style.display = 'block';
+                                    document.getElementById('chart18').style.display = 'none';
+                                    document.getElementById('chart19').style.display = 'none';
+                                    document.getElementById('chart21').style.display = 'none';
+                                    document.getElementById('chart22').style.display = 'none';
+                                    document.getElementById('n2').style.display = 'none';
+                                    document.getElementById('n3').style.display = 'none';
+                                    document.getElementById('chart6').style.display = 'none';
+                                    document.getElementById('chart20').style.display = 'none';
+                                    }}}
+                </script>
+                
+                <script type="text/javascript">
+                function switchVisible13() {
+                            if (document.getElementById('chart18')) {
+                                if (document.getElementById('chart18').style.display == 'none') {
+                                    document.getElementById('chart21').style.display = 'block';
+                                    document.getElementById('chart18').style.display = 'block';
+                                    document.getElementById('n2').style.display = 'block';
+                                    document.getElementById('chart6').style.display = 'none';
+                                    document.getElementById('chart19').style.display = 'none';
+                                    document.getElementById('chart20').style.display = 'none';
+                                    document.getElementById('chart22').style.display = 'none';
+                                    document.getElementById('n1').style.display = 'none';
+                                    document.getElementById('n3').style.display = 'none';
+                                    document.getElementById('n4').style.display = 'none';
+                                    document.getElementById('chart24').style.display = 'none';
+                                    document.getElementById('chart25').style.display = 'none';
+                                   }
+                                else {
+                                    document.getElementById('chart18').style.display = 'block';
+                                    document.getElementById('chart21').style.display = 'block';
+                                    document.getElementById('n2').style.display = 'block';
+                                    document.getElementById('chart6').style.display = 'none';
+                                    document.getElementById('chart19').style.display = 'none';
+                                    document.getElementById('chart20').style.display = 'none';
+                                    document.getElementById('chart21').style.display = 'none';
+                                    document.getElementById('chart22').style.display = 'none';
+                                    document.getElementById('n1').style.display = 'none';
+                                    document.getElementById('n3').style.display = 'none';
+                                    document.getElementById('n4').style.display = 'none';
+                                    document.getElementById('chart24').style.display = 'none';
+                                    document.getElementById('chart25').style.display = 'none';
+                                    }}}
+                </script>
+               
+                <script type="text/javascript">
+                function switchVisible14() {
+                            if (document.getElementById('chart19')) {
+                                if (document.getElementById('chart19').style.display == 'none') {
+                                    document.getElementById('chart22').style.display = 'block';
+                                    document.getElementById('chart19').style.display = 'block';
+                                    document.getElementById('n3').style.display = 'block';
+                                    document.getElementById('chart6').style.display = 'none';
+                                    document.getElementById('chart18').style.display = 'none';
+                                    document.getElementById('chart20').style.display = 'none';
+                                    document.getElementById('chart21').style.display = 'none';
+                                    document.getElementById('n1').style.display = 'none';
+                                    document.getElementById('n2').style.display = 'none';
+                                    document.getElementById('chart24').style.display = 'none';
+                                    document.getElementById('chart25').style.display = 'none';
+                                 }
+                                else {
+                                    document.getElementById('chart19').style.display = 'block';
+                                    document.getElementById('chart22').style.display = 'block';
+                                    document.getElementById('n3').style.display = 'block';
+                                    document.getElementById('chart6').style.display = 'none';
+                                    document.getElementById('chart18').style.display = 'none';
+                                    document.getElementById('chart20').style.display = 'none';
+                                    document.getElementById('chart21').style.display = 'none';
+                                    document.getElementById('n1').style.display = 'none';
+                                    document.getElementById('n2').style.display = 'none';
+                                    document.getElementById('n4').style.display = 'none';
+                                    document.getElementById('chart24').style.display = 'none';
+                                    document.getElementById('chart25').style.display = 'none';
+                                    }}}
+                </script>     
+
+
+
+
+        <div class="wrapper_table">
+            <div class="outer_table" >
+                <div class="inner_table">
+                    <div class="table">
+                    <table>
+                    <tr>
+                        <td>MHW</td>
+                        <td>
+                            Der <b>Mittlere Höchste Wasserstand</b> ist das arithmetische Mittel der höchsten Werte der einzelnen Jahre in der betrachteten Zeitspanne. 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>MW</td>
+                        <td>
+                            Der <b>Mittelwasserstand</b> ist das arithmetische Mittel aller Tageswerte in der betrachteten Zeitspanne.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>MNW</td>
+                        <td>
+                          Der <b>Mittlere Niedrigste Wasserstand</b> ist das arithmetische Mittel der niedrigsten Werte der einzelnen Jahre in der betrachteten Zeitspanne.
+                        </td>
+                    </tr>
+                    </table>
+                    </div>
+                </div>
+            </div>
+
+                <p class="card-text" style="height:225px">
+                Eine direkte Auswirkung der Klimaentwicklung im Kreis Viersen kann an den Fließgewässern im Kreisgebiet beobachtet werden. 
+                So hatten die Trocken- und Hitzeperioden in den Jahren 2017 – 2020 erhebliche Auswirkungen auf den Wasserstand in den Gewässern.              
+                 </p>    
+        </div>
+        
+                        
+
+              
+                <p class="card-text">
+                Neben den genannten Flüssen im Kreis Viersen sind zahlreiche Bäche und Gräben von der neu aufgekommenen Niedrigwasserproblematik betroffen. 
+                Beispielhaft kann hier der Hammer Bach genannt werden, der 2020 das erste Mal über weite Strecken des Unterlaufs gänzlich trockenfiel.</p>                          
+                                
+            </div>
+        </div>
+        
+<!╌################╌>
+
+
+        <div class="card mb-4 ml-auto mr-auto" style="width: 100%;" data-aos="zoom-in">
+            <div class="card-body">
+            
+                <div id="GW" >
+                    <div class="header-5">
+                        <h5 class="text-left">
+                        Entwicklung der Grundwasserstände im Kreis Viersen im Zeitraum von 1955 – 2021 
+                        </h5>   
+                    </div>
+                </div>
+            
+                <p>
+                    Die nachfolgende Animation zeigt die Grundwasserstände im Kreis Viersen anhand von zwei ausgewählten Messstellen 
+                    (Messstelle 1: Leuther Mühle und Messstelle 2: Dülken). 
+                    Beide Messstellen befinden sich nicht im Einflussbereich von Grundwasserentnahmen.
+                    Die Grundwassermessstelle Leuther Mühle bildet die flurnahe (oberflächennahe) Grundwasserstandsdynamik ab. 
+                    Die Messstelle liegt im Bereich grundwasserabhängiger Böden und Feuchtgebiete. 
+                </p>                
+                
+                
+            <div class="wrapper">
+                
+                <div class="outer_img_right">
+                    <div class="img" id="chart23" style="display:flex"></div>
+                </div>
+               
+                <p class="card-text" style="height:475px">
+                    Eine direkte Auswirkung der Klimaentwicklung im Kreis Viersen kann an den beobachteten Grundwasserständen im Kreisgebiet gezeigt werden. 
+                    Gerade in den vergangenen 20 Jahren kann ein kontinuierliches Sinken der Grundwasserstände beobachtet werden. Die trockenen Jahre von 2017 – 2020 
+                    haben zudem erhebliche Auswirkungen auf die Grundwasserstände.
+                </p>  
+                
+            </div>    
+           
+           
+            <div class="wrapper">
+                
+                <div class="outer_img_two_right" style="height: 380px">
+                    <p class="card-text">
+                    <b>Leuther Mühle</b><br>
+                    Bei der Messstelle Leuther Mühle zeigt sich gerade durch die Nähe zur Erdoberfläche und zu den grundwasserabhängigen Böden eine gewisse Dynamik. 
+                    So kommt es gerade zu einer Grundwasserzehrung in den Sommermonaten und zum Absinken des Messstandes. 
+                    Als Folge der sehr trockenen Jahre 2017 – 2020 mit sehr geringer Grundwasserneubildungsraten und starken Zehrungseffekten in den Sommermonaten, 
+                    wurde das sehr niedrige Grundwasserstandsniveau von Anfang der 1990er Jahre im Sommer 2019 unterschritten. 
+                    Anfang der 1990er Jahre können gerade im Winter und im Frühjahr geringe Niederschlagssummen beobachtet werden. 
+                    Insgesamt kann eine Korrelation der Frühjahrsniederschläge und der Grundwassermessstände beobachtet werden.
+                    </p>      
+                </div>
+                
+                <div class="outer_img_two_left" style="height: 380px">
+                    <p class="card-text">
+                    <b>Dülken</b><br> 
+                    An der unbeeinflussten Grundwassermessstelle Dülken kann seit 2003 ein stark abfallenden Trend des Grundwasserstands beobachtet werden.
+                    Dieser Trend zeigt deutlich die unterdurchschnittliche Grundwasserneubildung im Kreis Viersen. 
+                    Die niedrigen Grundwasserstände Anfang und Mitte der 1990er Jahre wurden deutlich unterschritten. 
+                    Allerdings wurde der historische Tiefststand Ende der 1970er Jahre nicht erreicht.   
+                    Auch an der Messstelle Dülken ist eine Korrelation insbesondere mit den Frühjahrsniederschlägen zu erkennen.           
+                    </p>                
+                </div>
+                
+            </div>
+                
+			</div>
+		</div>
+    		
+<!╌################╌>
+
+         <div id="Frucht" class="card mb-4 ml-auto mr-auto" style="width: 100%">
+            <div class="card-body">
+                <div class="header-5">
+                    <h5 class="text-left">
+                    Entwicklung der Fruchtfolge ausgewählter Früchte und Feldfrüchte im Kreis Viersen
+                    </h5>   
+                </div>           
+
+            <div class="wrapper">
+                
+                <div class="outer_img_right">
+                    <div class="img" id="chart26" style="display:flex"></div>
+                </div>
+               
+                <p class="card-text" style="height:475px">
+                Die nebenstehende Abbildung zeift die Entwicklung des Zeitpunktes des letzten auftretenden Frostes im Frühling 
+                in Viersen (Station Tönisvorst) und den Beginn der 
+                Fruchtblüten im Kreisgebiet (mehrere Stationen über den Kreis verteilt).
+                Zu erkennen ist, dass die beiden Zeitpunkte weitestgehend korrelieren umd immer eher im Jahr stattfinden. 
+                Es deutet sich an, dass sich der Beginn der Blüte deutlich schneller verfrüht als der letzte 
+                Frosttag, sodass sich beide Zeitpunkte immer mehr annähern. 
+                Eintretender Frost bei Blütebeginn kann den Pflanten Schaden zuführen. als Prävention eignen sich Maßnahmen wir Vliesabdeckungen oder
+                eine Frostschutzberegnung im Obst- und Gemüseanbau.
+                 </p>   
+                
+            </div>    
+           
+    			</div>
+    		</div>
+    		
+    		
+<!╌################╌>
+
+
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script type="text/javascript">
+    
+        var graphs6 = {{ graph6JSON | safe}};
+        Plotly.plot("chart6", graphs6,{});
+        
+        var graphs7 = {{ graph7JSON | safe}};
+        Plotly.plot("chart7", graphs7,{});
+   
+      var graphs18 = {{ graph61JSON | safe}};
+        Plotly.plot("chart18", graphs18,{});
+
+    	var graphs19 = {{ graph62JSON | safe}};
+        Plotly.plot("chart19", graphs19,{});
+    
+    	var graphs20 = {{ graph601JSON | safe}};
+        Plotly.plot("chart20", graphs20,{});
+   
+    	var graphs21 = {{ graph611JSON | safe}};
+        Plotly.plot("chart21", graphs21,{});
+    
+    	var graphs22 = {{ graph621JSON | safe}};
+        Plotly.plot("chart22", graphs22,{});    
+        
+    	var graphs23 = {{ graph71JSON | safe}};
+        Plotly.plot("chart23", graphs23,{});            
+        
+    	var graphs24 = {{ graph63JSON | safe}};
+        Plotly.plot("chart24", graphs24,{});
+
+    	var graphs25 = {{ graph631JSON | safe}};
+        Plotly.plot("chart25", graphs25,{});
+        
+    	var graphs26 = {{ graph_crops_JSON | safe}};
+        Plotly.plot("chart26", graphs26,{});
+        
+        
+        
+            </script>    
+        
+    {% endblock %}
+
+
+
+
+
+
+

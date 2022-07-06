@@ -1,0 +1,9 @@
+{
+    "version": 2,
+    "builds": [
+        { "src": "__init__.py", "use": "@now/python" }
+    ],
+    "routes": [
+        { "src": "/(.*)", "dest": "__init__.py" }
+    ]
+}

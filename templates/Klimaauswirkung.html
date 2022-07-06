@@ -1,0 +1,778 @@
+<div id="sidebar-wrapper">
+                <ul class="sidebar">
+                    <li style="text-align: left"> <a href="#Klimaauswirkungen im Kreis Viersen"><b>Klimaauswirkungen im Kreis Viersen</b></a> </li>
+                    
+                    <li style="text-align: right"> <a href="#Siedlungsraum">Siedlungsraum / Städte & Gemeinden</a> </li>
+                    
+                    <li style="text-align: right"> <a href="#Fließgewässer">Fließgewässer</a> </li>
+                    
+                    <li style="text-align: right"> <a href="#Feuchtgebiete">Feuchtgebiete, Moore und Heiden</a> </li>
+
+                    <li style="text-align: right"> <a href="#Waldgebiete">Waldgebiete</a> </li>
+                    
+                    <li style="text-align: right"> <a href="#Grundwasser">Grundwasser und Wasserversorgung</a> </li>
+
+                    <li style="text-align: right"> <a href="#Biodiversität">Biodiversität und Naturschutz</a> </li>
+               
+                    <li style="text-align: right"> <a href="#Landwirtschaft">Landwirtschaft</a> </li>
+</ul>
+</div>
+
+
+{% extends "layout.html" %}
+{% block content %}
+
+   <div id= "Klimaauswirkungen" class="card mb-4 ml-auto mr-auto" style="width: 100%; margin-top:140px" data-aos="zoom-in">
+      <div class="card-body">
+                
+                <div>
+                    <h4 class="text-left">
+                     		Klimaauswirkungen im Kreis Viersen 
+                    </h4>   
+                </div>
+                <p>
+                Neben den meteorologischen Klimaentwicklungen und den hydro(geo)logischen Klimafolgen, gibt es weitere Auswirkungen die 
+                oftmals nicht ausreichend durch Daten beschrieben werden können. 
+                Hierzu zählen zum Beispiel die Auswirkungen auf Waldgebiete. Durch die Klimaentwicklung und die -folgen kommt es gerade in Waldgebieten zu erhöhter 
+                Waldbrandgefahr, Erosion und Schädlingen, welche den Waldbestand bedrohen. 
+                </p>
+         
+    </div>
+</div> 
+
+ <div id="Siedlungsraum" class="card mb-4 ml-auto mr-auto" style="width: 100%" data-aos="fade-left">
+    <div  class="card-body">                  
+                                         
+        <div class="header-5">
+            <h5 class="text-left">
+            Auswirkugen auf Siedlungsraum / Städte & Gemeinden 
+            </h5>   
+        </div>   
+
+        <div class="wrapper_img">
+            <div class="outer_img">
+        
+                         <img src="{{url_for('static', filename='Wasserhaushalt_Siedlungsraum_1.png')}}" class="thumbnail"/>
+                                     
+                        <p class="card-text">
+                            <em>Beispielhafter Wasserhaushalt: Von der Nautrlandschaft zur Kulturlandschaft</em>
+                        </p>
+            </div>
+                
+            <p class="card-text">
+                Der Siedlungsraum in Deutschland und respektive im Kreis Viersen steht angesichts sich verändernder Einflussfaktoren vor neuen Herausforderungen. 
+                Wandelprozesse wie der Klimawandel oder der demografische Wandel üben einen enormen Druck auf bestehende urbane Infrastruktursysteme, 
+                Gebäude und die Bevölkerung aus. So beeinflusst beispielsweise der anthropogen bedingte Klimawandel die Kanalisation vor allem durch 
+                die Verschiebung der hydrologischen Verhältnisse. Insgesamt ist zu beobachten, dass die Anzahl der Niederschlagsereignisse im Sommerhalbjahr abnimmt, 
+                während die Anzahl im Winterhalbjahr steigt. Gleichzeitig ist eine Zunahme von räumlich stark variablen Starkregenereignissen und langen Trockenperioden 
+                zu beobachten. Diese Veränderungen der hydrologischen Verhältnisse führen zu immer häufigeren Überlastungen und Auslastungsdefiziten der vorhandenen Kanalisation.
+                Während vor allem in den Sommermonaten lange Trocken- und Hitzeperioden zu Wasserknappheit und zur Beeinträchtigung der Gesundheit führen, 
+                wurden diese Extremereignisse zusätzlich durch Starkregenereignisse mit bisher ungeahnter Intensität begleitet. Dabei zeigte sich, dass gerade 
+                starkregeninduzierte Überflutungen überall, plötzlich und zum Teil sehr lokal, mit variablen Ausprägungen und enormen Schadensfolgen auftreten können. 
+                Während Überstau- und Überflutungsereignisse der Kanalisation bzw. urbane Sturzfluten oftmals große Sachschäden bis hin zur Gefährdung von Menschleben 
+                verursachen können, verursachen lange Trockenperioden einen höheren Wartungs- und Sanierungsaufwand (Kosten) bei den städtischen Infrastruktursystemen. 
+                Verstärkt werden diese Effekte durch lokale und regionale demografische Veränderungen. Hierbei hat vor allem die immer weiter zunehmende Versiegelung von 
+                Flächen große Auswirkungen auf die Intensität von niederschlagsinduzierten Oberflächenabflüssen und auf das Kleinklima von urbanen Räumen. 
+                Versiegelte Flächen führen durch die starke Erhöhung des Oberflächenabflusses gleichzeitig zu einer Reduzierung der Grundwasserneubildung sowie der 
+                Verdunstungsleistung von Vegetation und Böden. Die Folge sind nicht nur pluviale Überflutungen, sondern vor allem auch ein stark veränderter urbaner 
+                Wasserhaushalt.  
+                
+        </div>
+                <br> </br>
+                        <div class="wrapper_img">
+                <div class="outer_img" style="float: right">
+            
+                             <img src="{{url_for('static', filename='Viersen_Kreis_Monitoring.png')}}" class="thumbnail"/>
+                                         
+                            <p class="card-text">
+                                <em>Ausschnitt aus dem Kreismonitoring des Kreis Viersen (Quelle: Kreis Viersen)</em>
+                            </p>
+                </div>
+
+
+                
+                Im Kreis Viersen reduzierten sich die landwirtschaftlichen Flächen Zwischen 2005 und 2015 um 1.101 Fußballfelder (-786 ha).
+                Gleichzeitig nahmen die Siedlungs- und Verkehrsfläche um 686 Fußballfelder (+490 ha) sowie die Waldfläche um 401 Fußballfelder (+286 ha) zu.   
+                
+                Es zeigt sich, dass im Kreis Viersen zwar eine Zunahme der Siedlungs- und Verkehrsfläche stattgefunden hat, 
+                gleichzeitig aber auch Aufforstung betrieben wurde und landwirtschaftliche Flächen umgenutzt wurden.
+                <br> </br>
+                Für weitere Informationen sei verwiesen auf das <a href="https://www.kreis-viersen.de/sites/default/files/dokumente/kreismonitoring_2021.pdf" target="_blank">Kreis Monitoring 2021 des Kreis Viersen</a>.
+                <br> </br>
+                Korrelierend mit der Zunhame an Siedlungs- und Verkehrsflächen ist auch ein Bevölkerungszuwachs von 1,4 % zwischen 2013 und 2018 zu beobachten. 
+                Demografisch ist eine Zunahme in der Altersgruppe der über 80-Jährigen um 45 % festzustellen und eine Abnahme der 6- bis 18-Jährigen sowie der 30- bis 50-Jährigen.
+                Seit 2011 besteht ein deutlicher Anstieg der Kinder unter 6 Jahren (+14,7 %).
+                <br> </br>
+                Der demografische Wandel in Verbindung mit der dargelegten Klimaentwicklung führen dazu, dass die Hitzebelastung für die Menschen stetig steigt und 
+                zunehmend Hitzefolgeerkrankungen festzustellen sind. 
+            </p>           
+            
+        </div>
+        
+	</div>
+ </div>              
+                  
+        <div id="Fließgewässer" class="card mb-4 ml-auto mr-auto" style="width: 100%; " data-aos="fade-left">
+            <div class="card-body">                  
+             <div class="header-5">
+                <h5 class="text-left">
+                Auswirkung auf Fließgewässer
+                </h5>   
+                </div>   
+             
+        <div class="wrapper_img">
+            <div class="outer_img" style="float: right">
+        
+                         <img src="{{url_for('static', filename='Renaturierung eines Abschnitts der Nette.jpg')}}" class="thumbnail"/>
+                                     
+                        <p class="card-text">
+                            <em>Renaturierung eines Abschnitts der Nette. Mehr Raum für Starkregen und verstärkte Grundwasseranreicherung (Quelle: Kreis Viersen)</em>
+                        </p>
+            </div>
+
+            
+                <p class="card-text">
+
+                <b>Niedrigwasser</b><br> 
+                Die Auswirkungen des Klimawandels sind deutlich am Zustand und der Entwicklung der Fließgewässer im Kreis Viersen zu beobachten. 
+                Länger andauernde Niedrigwasserstände in den Gewässern, welche vor allem unterhalb des mittleren Niedrigwasserabflusses liegen, 
+                oder sogar Trockenfallen der Gewässer können zur Beschädigung der Biozönose (Gemeinschaft von Organismen im Gewässer) führen. 
+                Gerade Makrophyten (pflanzliche Organismen) erholen sich nach dem Trockenfallen eines Gewässers nur langsam. 
+                 <br></br>
+                Eine wichtige Maßnahme zur Regulierung des Abflussregimes der Gewässer und zur Schaffung von naturnahen Rückzugsräumen für Flora und Fauna 
+                ist daher die Renaturierung von Gewässern. Durch mäandrierende Gewässerläufe wird die Fließgeschwindigkeit in den Gewässern verlangsamt, 
+                Wasser in der Fläche zurückgehalten und gespeichert, sowie die Ausbildung von Flussauen gefördert. 
+                Gerade im Kreis Viersen trägt der in den letzten Jahren häufiger auftretende Biber mit seinen Bauten auf natürliche Weise dazu bei, 
+                dass der Abfluss reguliert wird und das Flussbett eine neue naturnahe Gestalt annimmt. 
+         </div>   
+         
+        <div class="wrapper_img">
+            <div class="outer_img" style="float: left">
+        
+                         <img src="{{url_for('static', filename='Trockengefallene Nette im Kreis Viersen.jpg')}}" class="thumbnail"/>
+                                     
+                        <p class="card-text">
+                            <em>Trockengefallene Nette im Kreis Viersen (Quelle: Netteverband)</em>
+                        </p>
+            </div>
+
+
+            
+                
+                <p class="card-text" style="">
+                Beobachtet werden konnte ebenfalls, dass sich durch erhöhte Wassertemperaturen die Gefahr von z. B. Blaualgenbefall (Cyanobakterien) 
+                in Gewässern im Kreis Viersen erhöht. Weiterhin kann die Kombination aus Niedrigwasserabfluss, erhöhter Wassertemperatur und ggf. 
+                Zufluss aus Mischwassereinleitungen (Abwasser aus der Kanalisation) zu derart ungünstigen Bedingungen führen, dass es zu einer erhöhten 
+                Sauerstoffzehrung im Gewässer kommt und etwa massives Fischsterben hervorgerufen wird. Mit zukünftig weiter steigenden Temperaturen wird 
+                sich auch diese Entwicklung verstärken.
+                <br></br>
+                <b>Flusshochwasser und Starkregen</b><br>
+                Durch das Land NRW wurde im Kreisgebiet Viersen sowohl die Niers, als auch ein Zufluss der Niers (Hammer Bach), 
+                mit einer erhöhten Hochwassergefährdung ausgewiesen. Hierfür wurden und werden (aktualisierte) Gefahren- und Risikokarten 
+                sowie Hochwasserrisikomanagementpläne für verschiedene Szenarien auf Landesebene, in Abstimmung mit dem Kreis und den kreisangehörigen Kommunen, erarbeitet.
+                In der weiter zurückliegenden Vergangenheit waren vor allem Hochwässer im Winter und Frühjahr, welche durch große Regenmengen, 
+                teilweise verbunden mit Schneeschmelze, verursacht wurden, die hauptsächliche Herausforderung für die Wasserwirtschaft. 
+                Dies hat sich im Zuge des Klimawandels geändert. Heute kommt es vor allem in Folge sommerlicher Starkregenereignisse zu erhöhten Wasserständen in den Gewässern.
+                
+                </p>
+         </div>       
+
+        <div class="wrapper_img">
+            <div class="outer_img" style="float: right">
+        
+                         <img src="{{url_for('static', filename='Starkregenereignis im Kreis Viersen.jpg')}}" class="thumbnail"/>
+                                     
+                        <p class="card-text">
+                            <em>Starkregenereignis im Kreis Viersen (Quelle: Kreis Viersen)</em>
+                        </p>
+            </div>
+
+                <p class="card-text">
+                Insbesondere in kleinen bis mittelgroßen Nebengewässer kommt es durch häufiger auftretende Starkregenereignisse und der damit verbundenen 
+                Überlastung von Kläranlagen und Regenüberlaufbecken, vermehrt zu hydraulischen und stofflichen (organischen) Belastungen. 
+                Nicht nur die stoffliche Belastung führt zu einer Schädigung der Biozönose, sondern auch die hydraulische Belastung, sorgt dafür, 
+                dass Kleinstlebewesen und Pflanzen von der Gewässersohle weggespült werden.  
+                
+                Eine weitere sich im Zuge des Klimawandels verstärkende Herausforderung ist die Belastung von Fließgewässern durch Erosion in Folge von Starkregen. 
+                Dies konnte in den vergangenen Jahren zum Beispiel an der Schwalm beobachtet werden, wo Bodenabträge aus landwirtschaftlichen Flächen die Schwalm 
+                sowie deren Seen beeinträchtigten, da vermehrt organische Belastungen in die Gewässer gespült wurden. 
+                <br></br>
+                 <b>Paradigmenwechsel in der Wasserwirtschaft</b><br>
+                
+                Lange Zeit war es Ziel das Niederschlagswasser so schnell wie möglich aus der Landschaft “wegzubekommen“. 
+                Dies galt sowohl für Fließgewässer, die begradigt wurden um eine Hochwassergefahr zu vermeiden und die oftmals sumpfige Landschaft zu entwässern, 
+                als auch für die Siedlungsentwässerung, die Niederschlagswasser vollständig von Siedlungsflächen zu den Vorflutern leiten sollte 
+                (Versiegelung von Flächen und Ableitung über die Kanalisation).
+                </p> 
+                
+            </div>                
+                            
+        <div class="wrapper_img">
+            <div class="outer_img" style="float: left">
+        
+                         <img src="{{url_for('static', filename='Entwässerungsgraben Kreis Viersen.jpg')}}" class="thumbnail"/>
+                                     
+                        <p class="card-text">
+                            <em>Entwässerungsgraben im Kreis Viersen (Quelle: Kreis Viersen)</em>
+                        </p>
+            </div>            
+         
+                <p class="card-text">
+
+                Lange Zeit war es Ziel das Niederschlagswasser so schnell wie möglich aus der Landschaft “wegzubekommen“. 
+                Dies galt sowohl für Fließgewässer, die begradigt wurden um eine Hochwassergefahr zu vermeiden und die oftmals sumpfige Landschaft zu entwässern, 
+                als auch für die Siedlungsentwässerung, die Niederschlagswasser vollständig von Siedlungsflächen zu den Vorflutern leiten sollte 
+                (Versiegelung von Flächen und Ableitung über die Kanalisation).
+                
+                Seit der EU- Wasserrahmenrichtlinie aus dem Jahr 2000, sollen Gewässer verstärkt renaturiert werden und somit an ihren Ursprungszustand angenähert werden. 
+                Neben der Erhöhung der Artenvielfalt und der Herstellung eines naturnahen Hochwasserschutzes, wird durch eine Renaturierung auch der Landschaftswasserhaushalt 
+                positiv beeinflusst. Bei Hochwasser und/oder Starkregen kann Wasser in Auenländern gepuffert werden. Gleichzeitig wird dieses Überschusswasser gespeichert 
+                und reichert das Grundwasser an, was wiederum den Folgen von langen Trockenperioden entgegenwirkt.  
+                
+                Neben der Renaturierung von Fluss- und Bachabschnitten steht Der Rückhalt von Wasser im weit verzweigten Grabensystem im Bereich der Niers im Fokus der 
+                Aktivitäten im Kreis Viersen. Im Rahmen des BMU-geförderten Projekts NiersCon plant der Kreis in Kooperation mit den Wasser- und Bodenverband der 
+                Mittleren Niers das Grabensystem durch eine integrierte Steuerung dahingehend zu optimieren, dass es sowohl dem Hochwasserschutz, 
+                als auch dem gezielten Wasserrückhalt bestmöglich gerecht wird. Dabei soll untersucht werden, wie das dezentral in den Gräben gespeicherte Niederschlagswasser 
+                etwa zur Grundwasseranreicherung, zur Ableitung in Auenbruchwälder oder eventuell zur direkten Verwendung genutzt werden kann. 
+                Das Projekt befindet sich derzeit in Beantragung, es wird mit einem Projektstart Ende 2022 gerechnet.
+                Auch Bemühungen das Niederschlagswasser aus Siedlungsbereichen der Städte und Gemeinden nicht ausschließlich abzuleiten,
+                sondern vermehrt dezentral zu halten (z. B. durch Versickerung) tragen indirekt zur Anpassung der Fließgewässer an den Klimawandel bei. 
+                Die bei den immer häufiger auftretenden Starkregenereignissen abzuleitenden Wassermengen können so reduziert und Fließgewässer geschont werden. 
+                </p> 
+            </div>                
+    			</div>
+    		</div>                
+                 
+
+        <div id="Feuchtgebiete" class="card mb-4 ml-auto mr-auto" style="width: 100%;" data-aos="fade-left">
+            <div class="card-body">
+            
+                <div class="header-5">
+                <h5 class="text-left">
+                Auswirkung auf Feuchtgebiete, Moore und Heiden
+                </h5>   
+                </div>   
+                
+                <p>
+                <b>Feuchtgebiete</b><br>
+
+                Eine Besonderheit im Kreis Viersen sind seine zahlreichen ökologisch wertvollen Feuchtgebiete, Moore und Heiden.
+                 
+                Die Feuchtgebiete im Kreis Viersen sind oftmals mit den Fließgewässern zusammenhängende Ökosysteme. 
+                Gerade im Bereich der Nette werden die Feuchtgebiete durch eine direkte Grundwasser- oder Oberflächenwasseranbindung gestützt. 
+                Im direkten Einflussbereich der Niers finden sich insbesondere bei Grefrath Feuchtwiesen, Blänken (flache, temporär wasserführende Geländemulden) 
+                sowie Auenbruchwälder. Auch im Bereich der Schwalm und deren (früheren) Mäanderschleifen sind ausgedehnte Feuchtgebiete anzutreffen.
+                
+                Die Situation, dass Feuchtgebiete temporär wenig Wasser führen bzw. trockenfallen ist zu einem gewissen Maß normal. 
+                In den sehr trockenen Jahren 2018 – 2020 waren diese jedoch durch ausbleibende Niederschläge, eine geringe Wasserführung der angrenzenden 
+                Fließgewässer und sinkende Grundwasserstände außergewöhnlich stark betroffen, sodass erhebliche Schäden an der Biozönose auftraten. 
+                Vor dem Hintergrund der bisher beobachteten sowie projizierten Zunahme von Trocken- und Hitzeperioden im Frühjahr und Sommer, ist zu befürchten, 
+                dass sich die temporäre Betroffenheit der Feuchtgebiete im Kreis Viersen verschärfen wird.
+                
+                Auf der anderen Seite können Feuchtgebiete bei Starkregen und/oder Flusshochwasser die anfallenden Wassermassen sehr gut aufnehmen und speichern. 
+                Neben den positiven ökologischen Effekten wird hier Grundwasser über Versickerung des gespeicherten Wassers angereichert, 
+                wovon die Feuchtgebiete in Trockenphasen wiederum selbst profitieren. Vor dem Hintergrund des Klimawandels und der projizierten 
+                Trendverschärfung zur Zunahme von Extremwetterereignissen (temporär zu viel bzw. zu wenig Wasser) ist entsprechend die gezielte 
+                „Nutzung“ von Feuchtgebieten zur Wasserrückhaltung zu fördern. 
+                
+                Neben dem Schwammeffekt auf den Landschaftswasserhaushalt bietet die Wiedervernässung sowie extensive Nutzung insbesondere von Flächen mit 
+                Moor- oder Anmoor-Böden (z. B. im Bereich der Niers) ein hohes Potential zur Kohlenstoffspeicherung. Acker- und Grünlandstandorte, die bisher 
+                nur durch künstliche Entwässerung nutzbar und daher CO2-Quellen sind, können wiedervernässt als grundwassergesättigte Böden mehr organisches 
+                Material und Kohlenstoff speichern. 
+                 </p> 
+                <p>                
+
+                
+                
+        <div class="wrapper_img">
+            <div class="outer_img" style="float: left">
+        
+                         <img src="{{url_for('static', filename='Heidefläche im Bereich der niederländischen Grenze.jpg')}}" class="thumbnail"/>
+                                     
+                        <p class="card-text">
+                            <em>Heidefläche im Bereich der niederländischen Grenze (Quelle: Kreis Viersen)</em>
+                        </p>
+            </div>    
+            
+              
+                          
+                <p  class="card-text" style="">
+                
+                <b>Moore</b><br>
+                Im Kreis Viersen existieren zahlreiche einzelne Heidemoore (Moore umgeben von Heideflächen) im Naturschutzgebiet am Grenzwald bei Kaldenkrichen, 
+                Hangmoore (Moore, die sich infolge ständig zufließenden Hangwassers bilden) in den Hinsbecker Höhen im Naturschutzgebiet 
+                „Krickenbecker Seen und Kleiner De Wittsee“, das 65 ha große Gagelmoor im Naturschutzgebiet Elmpter Schwalmbruch und mehrere Moore 
+                im Naturschutzgebiet Lüsekamp und Boschbeek.
+
+                Die Moore im Kreis Viersen haben die in den vergangenen Jahren verstärkt aufgetretenen Trockenperioden relativ gut überstanden. 
+                Dies hat damit zu tun, dass Moore ähnliche Wasserhaltungseigenschaften wie ein Schwamm aufweisen. In Niederschlagsperioden oder auch bei Starkregen, 
+                saugen sie sich voll und speichern sehr große Mengen an Wasser. Dies wird bedingt durch die sauren, nährstoffarmen und wasserundurchlässigen Böden der Moore. 
+                In Trockenperioden können Moore und die auf ihnen beheimatete Flora und Fauna von diesem Wasservorrat zehren. 
+                Auch ggf. im Moor entspringende Bäche oder Feuchtgebiete profitieren von diesem Effekt und sind weniger anfällig gegenüber Niedrigwasser und Austrocknung. 
+                Moore können aber vor allem, wie bereits im Abschnitt „Feuchtgebiete“ angemerkt, aufgrund ihres CO2-Speicherverögens, einen Beitrag zum Klimaschutz leisten. 
+                Der Schutz und die Revitalisierung (Wiedervernässung von Mooren) sollte daher vor dem Hintergrund des Klimawandels vorangetrieben werden. 
+                 <br></br>
+                    <b>Heiden</b><br>
+                 Neben zahlreichen Feuchtgebieten und Mooren, existiert eine Vielzahl an Heiden im Kreis Viersen. 
+                Im Brachterwald erstreckt sich auf den Flugsanddünen ein weit ausgedehntes Mosaik aus Heiden und Wälder. 
+                Neben den bereits genannten Heideflächen im Grenzwald bei Kaldenkirchen sind die Wacholderheiden im Elmpter Schwalmbruch und die Heiden 
+                im Naturschutzgebiet Lüsekamp und Boschbeek ebenfalls zu erwähnen. 
+
+                Heiden kommen auf sandigen, nährstoffarmen Böden vor und weisen eine einzigartige Vegetation auf. 
+                Aufgrund der sandigen Eigenschaften wird das Wasser in diesen Böden nicht gespeichert und versickert in tiefer gelegene Bodenschichten. 
+                Entsprechend sind Heiden besonders anfällig bei verstärkt auftretenden Trockenperioden. 
+                In den besonders stark ausgeprägten Trockenperioden der Jahre 2018 - 2020 waren die ökologisch sehr wertvollen Heideflächen und deren Flora und Fauna 
+                deshalb stark betroffen.                 
+                </p>                                 
+        </div>                 
+                
+                
+                
+             </div>
+    		</div>                   
+                 
+        <div id="Waldgebiete" class="card mb-4 ml-auto mr-auto" style="width: 100%;  data-aos="fade-left">
+            <div class="card-body">                  
+                 
+                 <div class="header-5">
+                <h5 class="text-left">
+                Auswirkung auf Waldgebiete
+                </h5>   
+                </div>   
+            
+        <div class="wrapper_img">
+            <div class="outer_img" style="float: right">
+        
+                         <img src="{{url_for('static', filename='Wasserhaushalt_Wald_1.png')}}" class="thumbnail"/>
+                                     
+                        <p class="card-text">
+                            <em>Beispielhafter Wasserhaushalt: Auswirkungen der Klimafolgen in Waldgebieten</em>
+                        </p>
+            </div>    
+                        
+            
+                    
+                
+                <p>
+                Im Kreis Viersen existieren zahlreiche größere und kleinere Waldgebiete.  Im Westen des Kreises bestehen an der Grenze zu den Niederlanden 
+                mehrere Kiefer- und Laubwälder (Kaldenkirchen Grenzwald, Brachter Wald, Elmpter Wald, Meinweg), welche mit Mooren und Heiden versetzt sind. 
+                Ähnlich wie die Heideflächen im westlichen Gebiet des Kreises, stehen die Wälder auf teilweise sandigen Boden. 
+                An der Nette und den umliegenden Netteseen, sowie an der Schwalm, der Niers und deren Zuflüsse, existieren sogenannte Auenbruchwälder. 
+                Diese sind geprägt durch regelmäßige Überflutungen in Folge von Flusshochwasser und weisen eine gewisse Grundwassernähe auf. 
+                Durch diese Eigenschaften handelt es sich um teilweise sumpfige Wälder auf Niedermoorböden. 
+                Des Weiteren bestehen mehrere Laubwälder unter anderem auf den Süchtelner und Hinsbecker Höhen.
+                </p>
+            </div>                
+                
+                <p>
+                <b>Zustand</b><br>
+                Generell kann beim Zustand der Wälder beobachtet werden, dass die Bäume immer früher Alterserscheinungen aufweisen. 
+                Buchen, Eichen und Douglasien zeigen seit ca. 2010 spürbar mehr Schädigungen durch Trockenheit und Schädlinge. 
+                Dies kann als Hinweis auf durch den Klimawandel induzierte langfristige Änderungen gedeutet werden. Weiterhin wird, 
+                aufgrund des Trends zu geringer werdenden Niederschläge im Frühjahr, die Aufforstung mit jungen Bäumen erheblich schwieriger. 
+                Aus diesem Grund wird vermehrt mit sogenannten Altholzschirmen gearbeitet, die den heranwachsenden Jungbäumen Schatten und Windschutz spenden. 
+                Die im Rahmen des Klimawandels häufig genannten stark problembehafteten Fichtenwälder sind im Kreis Viersen eher sporadisch vorhanden. 
+                Beispiele für Baumarten im Kreis Viersen, bei denen die Klimawandelfolgen besonders stark durchschlagen, sind Ahorngewächse. 
+                Die amerikanische Roteiche kann dagegen beispielhaft als klimaresistent bezeichnet werden.        
+                </p>
+                <p>
+                <b>Eigentümerverhältnisse</b><br>
+                Die Struktur der Waldbesitzenden im Kreis Viersen teilt sich auf relativ wenige Großprivatwaldbesitzer und viele Klein- und Kleinstprivatwaldbesitzer auf. 
+                Gerade letztere sind auf Unterstützung, beispielsweise bei vorbeugenden Waldbrandschutzmaßnahmen, angewiesen. 
+                Der Kreis sowie die kreisangehörigen Kommunen besitzen ebenfalls große Waldflächen. Im Vergleich zu den Privatwälder, 
+                kann bei den Wäldern in öffentlicher Hand der Naturschutz und die Naherholung stärker in den Vordergrund gestellt werden, 
+                da wirtschaftliche Interessen der Forstwirtschaft weniger relevant sind. 
+                </p>
+                <p>
+                <b>Einfluss von Trockenperioden am Beispiel des Kaldenkirchener-Grenzwaldes</b><br>
+                Der Einfluss häufiger und länger auftretender Trockenperioden kann am Beispiel der Kiefern, welche die ältesten Bäume des Waldes darstellen, 
+                veranschaulicht werden. Im Bereich des Kaldenkirchener Grenzwaldes liegt in ca. 1 m Bodentiefe eine wasserstauende Tonschicht. 
+                In Zeiten mit ausreichend Wasserdargebot konnten die Bäume aus dieser Bodenschicht Wasser und Nährstoffe beziehen. 
+                Entsprechend sind die hiesigen Kiefern besonders groß gewachsen und weisen einen hohen Wasserbedarf auf. 
+                Über Jahrzehnte existierte ausreichend oberflächennahes Wasserdargebot. Die Wurzel der Bäume mussten somit nur in geringe Tiefen vordringen. 
+                Während der außergewöhnlich langanhaltenden Trockenperioden der Jahre 2018 – 2020 erschöpfte sich der oberflächennahe, 
+                geringmächtig ausgeprägte Grundwasserleiter zusehends, die flachen Wurzeln konnten nicht mehr an genügend Wasser fördern und zudem nicht durch die 
+                Tonschicht wurzeln um an tiefergelegene Grundwasserschichten zu gelangen. In der Folge traten erhebliche, 
+                teilweise irreversible Trockenschäden an den Kiefern auf. 
+                </p>
+                <p>
+                <b>Unterschiedliche Auswirkungen auf verschieden Baumarten am Bsp. der Süchtelner Höhen</b><br>
+                Insbesondere Buchen hatten aufgrund der extremen Trockenheit und Hitze in den Jahren 2018 – 2020 erstmals erhebliche Probleme ihren Wasserbedarf nachzukommen. 
+                Dagegen zeigten sich Eichen deutlich resistenter gegen die Trockenheit und Hitze. Deren Anfälligkeit gegenüber Insektenschäden ist sogar zurückgegangen.                  </p>
+                </p>
+                <p>
+                <b>Einflüsse von Trockenperioden auf Auenbruchwälder</b><br>
+                Die stark ausgeprägte Niedrigwasserproblematik der Nette in den außergewöhnlich trockenen Jahren 2018 – 2020 wirkte sich auch auf die dort angrenzenden 
+                Auenbruchwälder negativ aus. Die angrenzenden Wälder konnten nicht ausreichend mit Wasser gespeist werden. Wie im Abschnitt „Feuchtgebiete“ beschrieben, 
+                können Auenbruchwälder bei Starkregen und/oder Flusshochwasser die anfallenden Wassermassen sehr gut aufnehmen und speichern. Neben dem Hochwasserschutz 
+                hat dies auch sehr positive Effekte auf den Landschaftswasserhaushalt. Durch die Schwammwirkungen wird zum Beispiel Grundwasser angereichert, 
+                welches bei längeren Trockenperioden dann wiederum den Basisabfluss von Fließgewässern stützen kann.                 
+                </p>
+              
+              
+        <div class="wrapper_img">
+            <div class="outer_img" style="float: left">
+        
+                         <img src="{{url_for('static', filename='Spuren des Wald- und Heidebrands 2020 (1).jpg')}}" class="thumbnail"/>
+                                     
+                        <p class="card-text">
+                            <em>Spuren des Wald- und Heidebrands 2020 (Quelle: Kreis Viersen)</em>
+                        </p>
+            </div>    
+            
+             
+                          
+                <p  class="card-text" style="">
+                <b>Einflüsse von Trockenperioden auf Auenbruchwälder</b><br>
+                Die stark ausgeprägte Niedrigwasserproblematik der Nette in den außergewöhnlich trockenen Jahren 2018 – 2020 wirkte sich auch auf die dort angrenzenden 
+                Auenbruchwälder negativ aus. Die angrenzenden Wälder konnten nicht ausreichend mit Wasser gespeist werden. Wie im Abschnitt „Feuchtgebiete“ beschrieben, 
+                können Auenbruchwälder bei Starkregen und/oder Flusshochwasser die anfallenden Wassermassen sehr gut aufnehmen und speichern. Neben dem Hochwasserschutz 
+                hat dies auch sehr positive Effekte auf den Landschaftswasserhaushalt. Durch die Schwammwirkungen wird zum Beispiel Grundwasser angereichert, 
+                welches bei längeren Trockenperioden dann wiederum den Basisabfluss von Fließgewässern stützen kann.                 
+                <br></br>
+                
+                <b>Wald- und Heidebrand</b><br>
+
+                Im Frühjahr 2020 ereignete sich im Naturschutzgebiet De Meinweg ein außergewöhnlich großer Wald- und Heidebrand. 
+                Grenzüberschreitend waren niederländische und deutsche Feuerwehren im Einsatz (insgesamt 1.600 Kräfte aus NRW). 
+                Erst nach fünf Tagen und erheblichen Anstrengungen konnte der Brand unter Kontrolle gebracht werden. Die Folgen sind bis heute weitflächig sichtbar. 
+                Die sandigen Böden in der niederländischen Grenzregion trocknen bei längeren Trockenphasen schnell aus. 
+                Die in den dortigen Wäldern anzutreffenden Kiefern lassen zudem eine, aus ökologischer Sicht zu begrüßende, intensive bodennahe Vegetation zu (Gräser etc.). 
+                Entsprechend ist hier das Risiko höher, dass sich auf ausgetrockneten Grasflächen (zunderartig) ein Feuer entwickelt, 
+                als beispielsweise auf den Süchtelner Höhen, wo der Boden weniger schnell austrocknet und auch weniger bodennahe Vegetation existiert, die sich entzünden könnte. 
+                Es ist zu befürchten, dass in Folge der projizierten weitergehenden Entwicklung (vermehrt auftretenden Trocken- und Hitzeperioden) 
+                und den tendenziell abnehmenden Niederschlägen im Frühjahr, die Waldbrandgefahr weiter steigen wird.
+                Als Konsequenz aus dem Wald- und Heidebrand 2020 erarbeitet der Kreis Viersen eine Kreiskonzept Waldbrandbekämpfung. 
+                In diesem Rahmen wurden bereits zwei Waldbrandfahrzeuge angeschafft, die von den einzelnen Feuerwehren im Kreisgebiet im Bedarfsfall genutzt werden können. 
+                Bereits zuvor beteiligte sich der Kreis am grenzüberschreitenden EU-INTERREG-Projekt „Wald- und Naturbrandprävention". 
+                </p>                                 
+        </div>                  
+              
+              
+
+    			</div>
+    		</div>                   
+
+        <div id="Grundwasser" class="card mb-4 ml-auto mr-auto" style="width: 100%;" data-aos="fade-left">
+            <div class="card-body">                  
+                                                 
+                <div class="header-5">
+                <h5 class="text-left">
+                Auswirkung auf Grundwasser und Wasserversorgung
+                </h5>   
+                </div>   
+                
+                <p>
+                <b>Entwicklung bis heute</b><br>
+                In den vergangenen 10 Jahren konnte in ganz NRW ein anhaltender fallender Trend bei den Grundwasserständen beobachtet werden, welche im Jahr 2019 in teils 
+                historischen Tiefständen mündete. 
+                Parallel dazu viel die Grundwasserneubildung deutlich niedriger aus, als im langjährigen Mittel. Als Erklärung dafür wird eine Überlagerung natürlicher 
+                Klimavariabilität mit den bereits beobachtbaren Auswirkungen des anthropogenen Klimawandels vermutet.
+                Im Verbandsgebiet des Erftverbands konnte in den letzten 15 bis 20 Jahren insgesamt eine unterdurchschnittliche (im Vergleich zum langjährigen Mittel) 
+                Grundwasserneubildung beobachtet werden. Insgesamt gab es in 13 der letzten 20 Jahre eine Unterschreitung des langjährigen Mittelwerts. 
+                An der Referenzgrundwassermessstelle im Kreis Viersen ist, wie bereits im Abschnitt Klimafolgen-Grundwasser erläutert, seit Anfang der 2000er 
+                Jahre ein abfallender Trend der Grundwasserstandsentwicklung zu erkennen. In den Trockenjahren 2018 - 2020 konnte teilweise starke Absenkung des 
+                Grundwasserstands im oberen Grundwasserleiter beobachtet werden.
+                </p>                                 
+                <p>
+                <b>Zukünfitge prognostizierte Entwicklung</b><br>
+                </p>                                 
+                <p>
+                <b>Wasserverfügbarkeit</b><br>
+                Die veränderten saisonalen Niederschlagsverteilungen haben einen Einfluss auf die Grundwasserneubildung. 
+                In einer aktuellen Studie zeigt sich, dass die mittlere langjährliche Grundwasserneubildung relativ konstant ausfällt und sogar eine leichte Zunahme 
+                für den Niederrhein prognostiziert wird. Begründet wird dies, durch eine kompensierende Wirkung der zunehmenden Winterniederschläge. 
+                Dies bezieht sich jedoch nur auf die mittlere jährliche Betrachtung. Saisonal ist gerade im Frühjahr und im Sommer damit zu rechnen, 
+                dass es zu deutlichen Defiziten bei der Grundwasserneubildung und zu sinkenden Grundwasserständen kommen wird. Neben häufiger vorkommenden 
+                Trockenjahren und -perioden, kann sich dieser Trend mit weiteren klimawandelbedingten Erscheinungen überlagern.  Durch höhere Lufttemperaturen 
+                gerade im Frühjahr können die Vegetationszeit der Pflanzen früher einsetzen und eine Erhöhung der Verdunstung begünstigen. Dies steht einer geringeren 
+                Wasserverfügbarkeit durch tendenziell zurückgehende Niederschläge im Frühjahr gegenüber. 
+                </p>                                 
+                <p>
+                <b>Wasserbedarf</b><br>
+                Die prognostizierten höheren Temperaturen und vor allem häufiger vorkommende Trocken- und Hitzeperioden können zu einem Anstieg des Grundwasserbedarfs 
+                der im Kreis Viersen stark ausgeprägten landwirtschaftlichen Bewässerung führen.
+                Weiterhin ist von einem zumindest temporären höheren Wasserbedarf der öffentlichen Wasserversorgung auszugehen. 
+                In Folge von Trocken- und Hitzeperioden könnte es wie im Jahr 2018 vermehrt zu einem erhöhten Spitzenwasserbedarf und/oder einer Verlängerung der 
+                Zeiträume hoher Nachfragen kommen (höherer Bedarf der Bevölkerung, nicht nur zum reinen Trinkwassergebrauch, sondern auch zur Gartenbewässerung / Pools usw.). 
+                Die Auswirkungen dieser Entwicklung betreffen nicht nur das Grundwasserdargebot, sondern lassen auch die Wasserversorgungs-Infrastruktur (Transportleitungen, 
+                Aufbereitung, Wasserspeicher) an ihre Grenzen stoßen.
+                Dieser höhere Bedarf korrespondiert mit der oben beschriebenen zumindest temporär geringeren Grundwasserverfügbarkeit. Beide Effekte verstärken sich gegenseitig. 
+                </p>                                 
+                
+    			</div>
+    		</div>    
+                    
+        <div id="Biodiversität" class="card mb-4 ml-auto mr-auto" style="width: 100%;" data-aos="fade-left">
+            <div class="card-body">                  
+                                                 
+                <div class="header-5">
+                <h5 class="text-left">
+                Auswirkung auf Biodiversität und Naturschutz
+                </h5>   
+                </div>   
+                
+        <div class="wrapper_img">
+            <div class="outer_img" style="float: right">
+        
+                         <img src="{{url_for('static', filename='Feuchtbiotop im Naturschutzgebiet Krickenbecker Seen.jpg')}}" class="thumbnail"/>
+                                     
+                        <p class="card-text">
+                            <em>Feuchtbiotop im Naturschutzgebiet Krickenbecker Seen - Rohrdommelprojekt, Nette - (Quelle: Kreis Viersen)</em>
+                        </p>
+            </div>    
+                        
+                
+                <p>
+                Im Kreis Viersen befindet sich eine Vielzahl unterschiedlicher Naturschutzgebiete, in denen Oberflächengewässer, Feuchtgebiete, Moore und Heiden  
+                wichtige Bestandteile sind. Aber auch außerhalb der Naturschutzgebiete gilt es die Natur bzw. die Biodiversität zu schützen. 
+                Auf globaler Ebene stellt der Klimawandel, neben der Intensivierung der Landnutzung und der Übernutzung von Arten, 
+                die drittwichtigste Gefährdungsursache für die biologische Vielfalt dar. In Europa stiegen in den letzten 100 Jahren die mittlere Lufttemperatur 
+                um 1,3 Grad Celsius, was rechnerisch einer Verschiebung der Temperaturzonen um mehr als 100 km nach Norden, entspricht.
+                Veränderte Temperaturen und Niederschläge sowie Extremereignisse haben bereits jetzt Auswirkungen auf Verbreitung, Jahresrhythmus und Fortpflanzung 
+                von Tier- und Pflanzenarten.  Besonders deutlich wird dies an der nachweislich früheren Blüte und Fruchtbildung bei Pflanzen oder bei der 
+                Ausbreitung wärmeliebender Tier- oder Pflanzenarten in zuvor nicht besiedelte nördlichere Gebiete. 
+                Diese Entwicklung kann dazu führen, dass spezialisierte Arten durch konkurrenzstarke, von der Erwärmung profitierende Arten verdrängt werden.
+                In jüngster Zeit haben eine ganze Reihe von Tierarten Nordrhein-Westfalen im Zuge des Klimawandels neu oder wieder besiedelt, 
+                wie etwa die Vogelart Bienenfresser. Auf der anderen Seite stehen Bestände von Arten, die in Mooren und Feuchtwiesen beheimatet sind, 
+                aufgrund häufigerer Trockenheit zur Brutzeit im Frühjahr z.T. unter Druck. Ein weiterer Aspekt ist, dass es durch die 
+                klimatischen Veränderungen zum verstärkten Auftreten von Schadorganismen kommen kann. Diese treffen auf Pflanzen, die durch häufiger 
+                vorkommende Trockenperioden so stark gestresst sind, dass sie weniger widerstandsfähig gegen den Befall von Schadorganismen sind.
+                </p>     
+                
+            </div>                
+                
+                <p>
+                <b>Entwicklung von Libellen im Kreis Viersen, stellvertretend weitere Arten</b><br>
+                Eine aktuelle, auf langfristig angelegten Untersuchungsprogrammen beruhende, Publikation der Biologische Station Krickenbecker Seen e. V. zur 
+                Entwicklung der Libellen im Kreis Viersen kommt zu dem Schluss, dass der „Hauptgrund für die Zunahme der Artenzahl in den letzten Jahrzehnten 
+                zweifellos der Klimawandel [ist], der hier heute auch solchen Libellenarten das Leben ermöglicht, die noch vor drei Jahrzehnten weitgehend auf 
+                den Mittelmeerraum beschränkt waren.“ (BSKS, 2022)
+                Betont wird in dem Zusammenhang, dass die Zunahme der untersuchten Libellenarten jedoch ohne die weitreichenden Naturschutzmaßnahmen der letzten 
+                Jahrzehnte wie das Unterschutzstellen wertvoller Gebiete sowie die Anlage und Vernetzung von Kleingewässern nicht möglich gewesen wären. Ebenfalls 
+                für den Libellenschutz förderlich war, dass durch die zunehmende Leistungsfähigkeit der Kläranlagen sich auch die Wasserqualität der Fließgewässer 
+                Schwalm, Nette und Niers deutlich erhöhte. 
+                Interessant ist weiterhin, dass neben den v.a. negativen Auswirkungen der Austrocknungstendenz der Landschaft, es auch Libellenarten gibt, 
+                die vom vermehrten Vorkommen sommertrockener Gewässer(bereiche) profitieren. 
+                </p>     
+    			</div>
+    		</div>    
+
+       
+        <div id="Landwirtschaft" class="card mb-4 ml-auto mr-auto" style="width: 100%;" data-aos="fade-left">
+            <div class="card-body">                  
+                                                 
+                <div class="header-5">
+                <h5 class="text-left">
+                Auswirkung auf Landwirtschaft
+                </h5>   
+                </div>   
+
+
+        <div class="wrapper_img">
+            <div class="outer_img" style="float: left">
+        
+                         <img src="{{url_for('static', filename='Wasserhaushalt_Landwirtschaft_1.png')}}" class="thumbnail"/>
+                                     
+                        <p class="card-text">
+                            <em>Beispielhafter Wasserhaushalt: Auswirkungen der Klimafolgen in der Landwirtschaft</em>
+                        </p>
+            </div>   
+
+
+                
+                    <p class="card-text" style="">
+                    Die Landwirtschaft ist für den Kreis Viersen landschaftlich und wirtschaftlich prägend. 
+                    Die Region ist ein Gunst- bzw. Hochertragsstandort und sichert überregional die Versorgung mit Lebensmitteln. 
+                    Dahingehend ist der Gemüse- und Kartoffelanbau von besonderer Bedeutung. Die Landwirtschaft ist wie kein anderer Wirtschaftszweig direkt abhängig 
+                    vom Klima- und Wettergeschehen, entsprechend zeigen sich bereits heute vielfältige Auswirkungen der Klimaänderung, die sich zukünftig noch verstärken werden.
+                   
+                    <br></br>          
+                <b>Einfluss auf Vegetationszeiten</b><br>
+                Da die Temperatur im Mittel in den letzten Jahrzehnten signifikant gestiegen ist (im Kreis Viersen um ca. 2 °C seit den 1950er Jahren) und damit einhergehend 
+                z. B. der letzte Frosttag im Frühling immer früher eintritt, verändern sich auch die Vegetationszeiten und Anbauphasen in der Landwirtschaft.
+                Beispielweise kann beobachtet werden, dass Kartoffeln immer früher im Jahr angebaut und geerntet werden können. Auch beim Grünland zeigt 
+                sich ein früheres Wachstum und eine frühere Ernte zu Beginn des Jahres, als auch eine Verlängerung der Vegetationszeit mit späterer Ernte im Herbst. 
+                Weiterhin wird bei Obstbäumen (z. B. Kirsche) nachweislich eine immer frühere Blüte und Fruchtbildung verzeichnet.
+         
+                   
+                    </p>  
+                                                   
+                </div>       
+                                
+
+                              
+                
+                <p>
+                <b>Niederschlagsverteilung</b><br>
+                Die Auswertung der Dürreentwicklung  im Kreis Viersen zeigt für die letzten ca. 15 Jahren einen Trend zu häufigeren Dürren 
+                (d.h. über einen längeren Zeitraum verringerte Bodenfeuchte), der sich in den Jahren 2018 - 2020 in extremer Form zuspitzte. 
+                Weiterhin wird anhand der Analyse der Niederschläge  in der Vergangenheit sowie der Projektion zur zukünftigen Entwicklung im Kreis Viersen deutlich, 
+                dass sich insbesondere im Frühjahr der beobachtete Rückgang von Niederschlägen und die Zunahme von Trockentagen weiter fortsetzen wird. Zusätzlich 
+                zu unterdurchschnittlichen Niederschläge über längere Perioden, können die gestiegenen Jahresmitteltemperaturen „zu erhöhten Verdunstungsraten der 
+                Böden und der Vegetation führen, was einen Wassermangel für das Pflanzenwachstum im durchwurzelten Boden und damit Bodentrockenheit zur Folge haben kann. 
+                Weiterhin bewirkt die Erhöhung der Jahresmitteltemperatur eine Verlängerung und einen früheren Beginn der Vegetationszeit. Dadurch wird sich die Situation 
+                tendenziell weiter verschärfen, denn je eher das Pflanzenwachstum beginnt, desto eher setzt der Wasserbedarf der Vegetation ein und zehrt am gespeicherten 
+                Bodenwasser“ (Klimabericht NRW 2021). 
+                Auf der anderen Seite können länger anhaltende Niederschlagsperioden und/oder Starkregen zu Herausforderungen für die Landwirtschaft führen. 
+                Im Zusammenhang mit der allgemeinen Zunahme von Wetterextremen, u.a. aufgrund langsam verlaufender bzw. verharrender Hoch- und Tiefdruckgebiete 
+                werden im Kreis Viersen auch zunehmend kleinteiligere Wetterlagen beobachtet, die dazu führen, dass sogar relativ nahe beieinanderliegende 
+                landwirtschaftliche Felder gleichzeitig entweder unter Wassermangel oder Wasserüberschuss leiden. Als Reaktion auf diese Entwicklung kommen 
+                in der Landwirtschaft nunmehr vermehrt Mikrowetterstationen zum Einsatz. 
+                </p>                                 
+                
+                <p>
+                <b>Anbaukulturenn</b><br>
+                Infolge der sich ändernden Klimabedingungen insgesamt und insbesondere im Hinblick auf die Ernteausfälle und erhöhten Wasserbedarfe, 
+                experimentieren Landwirtinnen und Landwirte im Kreis Viersen mehr und mehr mit dem Anbau „klimaangepasster“ Nutzpflanzen. 
+                Beispielswiese kann hier der Anbau hitze-und trockenresistenter Hirse, aber auch von Leguminosen sowie Hanf und Lein genannt werden. 
+                Gesucht sind dahingehend Züchtungen, die nicht nur mit Trocken- und Hitzeperioden, sondern beispielswiese auch mit den weiter vorkommenden 
+                Spätfrösten umgehen können. Ein weiteres Hemmnis ist, dass sich für diese Nutzpflanzen auch ein Markt entwickeln muss. Die zu beobachtende 
+                Bildung entsprechender Erzeugergemeinschaften ist dahingehend ein wichtiger Schritt.
+                </p>                                 
+                
+                <p>
+                <b>Bewässerung</b><br>
+                Die Beregnung bzw. Bewässerung landwirtschaftlicher Kulturen ist im Kreis Viersen stark ausgeprägt. 
+                Im Sommer dient sie der Sicherung des Ertrages und erlaubt zum Teil mehrere Ernten im Jahr. Im Kreisgebiet bestehen insgesamt ca. 
+                1400 Wasserrechte zur Entnahme von Grundwasser zur Bewässerung, eine Vielzahl von Wasserrechtsanträgen sind aktuell in der Bearbeitung. 
+                Die Struktur der Bewässerung ist entsprechend kleinteilig, die einzelnen landwirtschaftlichen Betriebe verfügen über einen oder mehrere Brunnen. 
+                Größere Zusammenschlüsse gibt es nicht.
+                
+                Infolge des prognostizierten Temperaturanstiegs und der damit einhergehenden Zunahme von Hitzetagen als auch der Häufung von Trockenperioden im Frühjahr 
+                und Sommer ist von einem weiter steigenden saisonalen Bedarf zur landwirtschaftlichen Bewässerung auszugehen.
+                
+                Die Zuständigkeit für die Wasserrechte liegt beim Amt für Technischen Umweltschutz der Kreisverwaltung Viersen. 
+                Neben der Grundwasserentnahme zur landwirtschaftlichen Bewässerung gibt es im Kreisgebiet bedeutende Grundwasserentnahmen durch die öffentliche Wasserversorgung. 
+                Gewerbliche Grundwasserentnahmen sind stark zurückgegangen und haben heute eine geringe Bedeutung. Derzeit führt das Amt für Technischen Umweltschutz in 
+                Kooperation mit den Wasserversorgungsunternehmen im Kreis sowie dem Erftverband eine Pilotstudie zur Bilanzierung des verfügbaren Grundwasserdargebotes 
+                im Westkreis Viersen durch. Mit der Bilanzierung wird eine Grundlage zur Beurteilung der Bewirtschaftung des regionalen Wasserhaushalts im Rahmen der 
+                Gewässeraufsicht und der Erteilung von Wasserrechten erstellt. 
+                
+                Wassersparende Bewässerungstechniken wie die Tröpfchenbewässerung werden im Kreis Viersen mittlerweile vermehrt eingesetzt, ihre Verbreitung bleibt 
+                aber noch punktuell. Ein Problem wird darin gesehen, dass z.B. beim Anbau von Kartoffeln die Bewässerungsschläuche jedes Jahr gewechselt werden müssen 
+                und in der Folge z.T. Plastikmüll auf den Feldern verbleibt. Aber die Erfahrungen mit wassersparenden Bewässerungstechniken in der Region nehmen zu und 
+                sollten angesichts der klimatischen Entwicklungen verstärkt weiterverfolgt werden. Darüber hinaus ist zu prüfen inwieweit innovative Methoden zur 
+                Wasserspeicherung und/oder Wiederverwendung von Prozesswasser dazu beitragen können, den Gebrauch von Grundwasser zu substituieren.
+                
+                Auf der anderen Seite gilt es das Grundwasserdargebot zu stärken. Beispielsweise plant der Kreis in Kooperation mit den Wasser- und Bodenverband der 
+                Mittleren Niers im Rahmen des BMU-geförderten Projekts NiersCon (derzeit in Beantragung) das Grabensystem im Bereich des Niers-Einzugsgebietes durch 
+                eine integrierte Steuerung dahingehend zu optimieren, dass es sowohl dem Hochwasserschutz, als auch dem gezielten Wasserrückhalt bestmöglich gerecht wird. 
+                Dabei soll untersucht werden, wie dezentral in den Gräben gespeichertes Wasser aus Perioden mit Niederschlagsüberschuss z.B. zur Grundwasseranreicherung 
+                genutzt werden kann.
+                
+                Ein relativ neu aufkommender Aspekt ist die sogenannte Frostschutzberegnung. Wie oben beschrieben, fangen Obstbäume tendenziell früher an zu blühen. 
+                Damit steigt jedoch auch die Gefahr, dass ganze Obstbaumplantagen durch Fröste geschädigt werden. Eine Technik dem Vorzubeugen ist die Beregnung mit 
+                feinen Wassertröpfchen, kurz vor Einsetzen der Minustemperaturen. Die entstehende dünne gefrorene Wasserschicht schützt die Pflanzen dann vor Schäden. 
+                Im Zuge des Klimawandels gewinnt diese Technik mehr und mehr an Bedeutung.
+                </p>                                 
+                
+       
+       
+       
+       
+
+        <div class="wrapper_img">
+            <div class="outer_img" style="float: left">
+        
+                         <img src="{{url_for('static', filename='Erosion auf landwirtschaftlicher Fläche nach Starkregenereignis (1).jpg')}}" class="thumbnail"/>
+                                     
+                        <p class="card-text">
+                            <em>Erosion auf landwirtschaftlicher Fläche nach Starkregenereignis, Zufluss zu Lehmkuhlgraben in Niederkrüchten (Quelle: Kreis Viersen)</em>
+                        </p>
+            </div>   
+
+                          
+                <p  class="card-text" style="">
+                <b>Erosion</b><br>
+
+                Im Zuge der Häufung und höheren Intensität von Starkregenereignissen steigt auch das Potential der Bodenerosion auf landwirtschaftlichen Ackerflächen. 
+                Zum einen ist dies äußerst nachteilig für den Acker selbst, aber auch angrenzende Grundstücke, Straßen oder Oberflächengewässer können von Erosionseintrag 
+                betroffen werden. Gerade die relativ kleinen Flüsse im Kreis Viersen wie die Schwalm oder Nette und die zahlreichen Bäche sind diesbezüglich aufgrund ihres rel. 
+                geringen Abflusses entsprechend vulnerable.
+                Auf der einen Seite kann mit acker- und pflanzenbaulichen Erosionsschutzmaßnahmen sowie Gewässerrandstreifen der Erosion und deren Folgen entgegengewirkt werden. 
+                Auf der anderen Seite ist auch das Zusammenspiel mit angrenzenden, oft stark versiegelten, Flächen in Wohn- oder Gewerbegebieten zu berücksichtigen, 
+                von denen bei Starkregenereignissen große Wassermengen oberflächig abfließen können. Dies ist ein weiteres Beispiel, welches die Notwendigkeit 
+                akteursübergreifender Abstimmung zum Umgang mit dem sich im Zuge des Klimawandels ändernden Wasserhaushalt verdeutlicht.
+                </p>                                 
+        </div>       
+                       
+                <p>
+                <b>Schädlinge</b><br>
+                Relativ milde Winter und die Verringerung von Frosttagen führen dazu, dass sogenannte Schädlinge auf Ackerflächen besser überleben können 
+                und dann im Frühjahr zu vermehrten Schäden beitragen. Verbunden mit den in den vergangenen Jahren gehäuft vorkommenden Trockenphasen hat dies beispielwiese 
+                zum verstärkten Auftreten von Mäusen geführt. Der wiederum vermehrte Gebrauch von Pflanzenschutzmitteln könnte eine indirekte Folge dieser 
+                Klimawandelauswirkung sein.
+                </p>  
+                
+                <p>
+                <b>Wärmebelastung in der Tierhaltung</b><br>
+                Auch die erhöhte Wärmebelastung von Nutztieren in Ställen ist im Kreis Viersen ein Thema. V.a. die Zunahme und Intensität von Hitzetagen und sogenannten 
+                tropischen Nächten führen dazu, dass Hitzestress eine immer größere Rolle spielt. 
+                Dies kann wiederum zu erhöhtem Stromverbrauch zur Kühlung der Ställe führen, welcher ggf. dann nicht aus klimaneutraler Erzeugung bezogen wird. 
+                Hier sind kreative Lösungen gefragt Klimafolgenanpassung und Klimaschutz zu verbinden.
+                </p>                    
+    			</div>
+    		</div>    
+    		
+    		
+    		
+    		
+        <div class="card mb-4 ml-auto mr-auto" style="width: 100%;" data-aos="fade-left">
+            <div class="card-body">
+                <p class="card-text">
+                ...   
+                ...
+                ...
+                ...
+                ...
+                ...
+                           
+                </p>                                 
+    			</div>
+    		</div>
+
+
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script type="text/javascript">
+    
+        var graphs6 = {{ graph6JSON | safe}};
+        Plotly.plot("chart6", graphs6,{});
+        
+        var graphs7 = {{ graph7JSON | safe}};
+        Plotly.plot("chart7", graphs7,{});
+   
+      var graphs18 = {{ graph61JSON | safe}};
+        Plotly.plot("chart18", graphs18,{});
+
+    	var graphs19 = {{ graph62JSON | safe}};
+        Plotly.plot("chart19", graphs19,{});
+    
+    	var graphs20 = {{ graph601JSON | safe}};
+        Plotly.plot("chart20", graphs20,{});
+   
+    	var graphs21 = {{ graph611JSON | safe}};
+        Plotly.plot("chart21", graphs21,{});
+    
+    	var graphs22 = {{ graph621JSON | safe}};
+        Plotly.plot("chart22", graphs22,{});    
+        
+    	var graphs23 = {{ graph71JSON | safe}};
+        Plotly.plot("chart23", graphs23,{});            
+        
+    	var graphs24 = {{ graph63JSON | safe}};
+        Plotly.plot("chart24", graphs24,{});
+
+    	var graphs25 = {{ graph631JSON | safe}};
+        Plotly.plot("chart25", graphs25,{});        
+        
+            </script>    
+        
+    {% endblock %}
+
+
+
+
+
+
+

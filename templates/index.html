@@ -1,0 +1,217 @@
+<div id="sidebar-wrapper">
+                <ul class="sidebar">
+                    <li style="text-align: left"> <a href="/"><b>Beschreibung der Kompaktanalyse</b></a> </li>
+                    
+                    <li style="text-align: right"> <a href="#Klimaentwicklung">Klimaentwicklung</a> </li>
+                    
+                    <li style="text-align: right"> <a href="#Klimafolgen">Klimafolgen</a> </li>
+                    
+                    <li style="text-align: right"> <a href="#Klimaauswirkungen">Klimaauswirkungen</a> </li>
+
+
+                 </ul> 
+</div>
+{% extends "layout.html" %}
+{% block content %}
+
+
+    
+        <div class="card mb-4 ml-auto mr-auto" style="width: 100%; margin-top: 140px"  data-aos="zoom-in">
+            <div class="card-body">
+            
+               <div class="header-5">
+                    <h3 class="text-left">
+            			Kompaktanalyse der Klimaentwicklung, -folgen und -auswirkungen im Kreis Viersen
+                    </h3>  
+                    
+                    <p>
+                    Nachfolgende Abbildung zeigt das Gebiet des Kreis Viersen. 
+                    Der Kreis Viersen liegt im Westen von Nordrhein-Westfalen. Auf einer Fläche von 563,3 km² leben ca. 300.000 Einwohner in 9 Städten und Gemeinden (Städte: Viersen, Willich, Nettetal, Kempen, Tönisvorst; Gemeinden: Schwalmtal, Brüggen, Niederkrüchten, Grefrath).
+                    Es erstrecken sich drei größere Gewässer über das Kreisgebiet. 
+                    Im Viersener Ortsteil Dülken entspringt die Nette und mündet nördlich von Wachtendonk in die Niers.
+                    Die Niers und die Schwalm sind die beiden weiteren größeren Gewässer. 
+                    Zudem erstrecken sich viele kleine Gewässer und Gräben über die landwirtschaftlich geprägte Fläche des Kreises.                                       
+                    </p>
+                    <img class="png" src="{{url_for('static', filename='Viersen_Uebersicht.png')}}" align="middle" />                
+                    <p>
+                    <b>Gebiet des Kreis Viersen</b> <em>(DTK 1 : 100.000, GeoBasis-DE / BKG 2022 / EuroGeographics / Bezirksregierung Köln Geobasis NRW )</em>
+                    </p>
+                    
+                    <p>
+                    Die Kompaktanalyse unterteilt sich in folgende drei Schritte welche nachfolgend näher erläutert werden:
+                     <ul>
+                     
+                    <li>Klimaentwicklung</li>
+                    <li>Klimafolgen</li>
+                    <li>Klimaauswirkungen</li>
+                     </ul>
+                    </p>
+                </div>
+            </div>
+        </div>  
+        
+            
+  
+                     
+     <div id= "Klimaentwicklung" class="card mb-4 ml-auto mr-auto" style="width: 100%;" data-aos="zoom-in">
+      <div class="card-body">
+                
+                <div>
+                    <h4 class="text-left">
+                     	Klimaentwicklung im Kreis Viersen 
+                    </h4>   
+                </div>
+                <p>
+                Die Entwicklung des Klimas kann anhand von meteorologischen Größen wie die Lufttemperatur, 
+                den Niederschlag oder anhand von Kenntagen (Bsp: Hitzetage) dargestellt und analysiert werden.
+                Für die Analyse wird die Entwicklung der meteorologischen Größen für unterschiedliche Betrachtungszeiträume dargestellt.
+                </p>
+                
+                <p class="card-text">
+                <h6 id="Klimaentwicklung 2020" class="text-left">
+                Entwicklung bis 2020
+                </h6>     
+                Zur Analyse der Klimaentwicklung wurde eine umfassende und räumlich differenzierte Auswertung und Darstellung von Klimadaten, 
+                -signalen und -informationen durchgeführt. Hierzu wurden für den Zeitraum von 1951 bis 2021 die bisherigen Klimaentwicklungen im Kreis Viersen
+                auf Basis von öffentlich verfügbare Daten, Forschungsergebnissen und Veröffentlichungen, sowie weiterer Literatur und Informationsmaterialien abgeleitet.
+                <p></p>
+                </p>
+     
+     
+                
+                <h6 id="Klimaentwicklung 2036" class="text-left">
+                Klimaprognose 2036-2098
+                </h6>                 
+                Zudem wird die zukünftige Klimaentwicklung des Kreis Viersen als Projektion dargestellt. 
+                Die zukünfitge Klimaentwicklung bezieht sich auf die Zeitperioden 2036-2065 und 2069-2098. 
+                Hierbei wurde für das 16. Jahr der genannten Zeitperioden (Jahr 2051 und Jahr 2084) prognostizierte Werte einer Studie des Climate Service Center Germany (GERICS) für den Kreis Viersen angenommen.
+                Die Werte ergeben sich aus bis zu 80 unterschiedlichsten Modellsimulation. In den Diagrammen ist immer die gesamte Bandbreite (minimaler und maximaler Wert) der Simulationen angegeben.
+                Der minimale und der maximale Wert begränzen die gesamte Spannbreite der Ergebnisse. Der Median ist der Wert der Simulation, welche in der Mitte des Modellsimulationen liegt.
+                Die prognostizierte Werte für die Jahre 2051 und 2084 beziehen sich immer auf die Referenzperiode von 1971-2000. 
+                Für diese Referenzperiode wurde für das 16. Jahr (1986) der Mittelwert der 30-jährigen Zeitspanne angenommen.
+                Die Werte von 2020-2051 und von 2052-2084 wurden interpoliert.
+                
+                Die prognostizierten Werte im Zeitraum von 1986-2020 werden zudem den tatsächlichen gemessenen Werten gegenübergestellt. 
+                Zu beachten ist, dass es sich hierbei um die tatsächlichen Werte und nicht um fortlaufende langjährige Mittelwerte handelt. 
+        
+        <div class="wrapper_table">
+            <div class="outer_table">
+                <div class="inner_table">
+                    <div class="table">
+                        <table>
+                        <tr>
+                            <td>RCP8.5:</td>
+                            <td>
+                                <ul>Keine Klimaschutzmaßnahmen - Kontinuierlichen Anstieg der Treibhausgasemissionen mit einer Stabilisierung der Emissionen auf einem sehr hohen Niveau zum Ende des 21. Jahrhunderts.</ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>RCP4.5:</td>
+                            <td>
+                                <ul>Wenige klimapolitische Maßnahmen - Anstieg der Treibhausgasemissionen bis zur Mitte des 21. Jahrhunderts. Danach Absenkung der Emissionen.</ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>RCP2.6:</td>
+                            <td>
+                                <ul>Ambitionierte Klimaschutzmaßnahmen - Absenkung der Treibhausgasemissionen und "negative Emissionen" zum Ende des 21. Jahrhunderts (eine netto-Entnahme von CO2 aus der Atmosphäre).</ul>
+                            </td>
+                        </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+            <p>
+                Zu berücksichtigen ist, dass sich die Daten der GERICS-Studie auf den HYRAS-Datensatz des Deutschen Wetterdienstes (DWD) stützen. 
+                In diesem Datensatz wurden über Deutschland und angrenzende Flusseinzugsgebiete verteilte Wetterstationen (bis zum Jahr 2015) herangezogen und auf ein Gitter mit 5 km Auflösung interpoliert.  
+                Für die derzeitige Klimaentwicklung im Kreis Viersen wurden hingegen Daten von Stationen des DWD im Kreis Viersen herangezogen.  
+                Aus diesem Grund kommt es zu geringfügigen Abweichungen bei den berücksichtigten Klimaparametern.
+                Für die Klimaprojektionen wurden alle drei Emissionsszenarien („Representative Concentration Pathways“ RCP) der GERICS-Studie bzw. des fünften Berichts des Intergovernmental Panel on Climate Change (IPCC-Sachstandsbericht) verwendet.
+            </p>   
+                          
+         </div>
+         
+           
+    </div>
+</div> 
+
+
+   <div id= "Klimafolgen" class="card mb-4 ml-auto mr-auto" style="width: 100%;" data-aos="zoom-in">
+      <div class="card-body">
+                
+                <div>
+                    <h4 class="text-left">
+                     		Klimafolgen im Kreis Viersen 
+                    </h4>   
+                </div>
+                <p>
+                Das Klima ist das Ergebnis eines komplexen Zusammenspiels aus Prozessen auf dem Land, der Ozeane und der Atmosphäre. 
+                Hierzu gehören auch jahreszeitliche Vegetationswechsel, Wechselwirkungen mit Prozessen im Boden oder mit Fließ- und stehenden Gewässern.
+                Da diese Wechselwirkungen nicht direkt durch meteorologischer Größen erfasst werden können,
+                werden diese Prozesse als <em>Klimafolgen</em> beschrieben.
+                Klimafolgen können vorallem anhand der hydrologischen Veränderungen an Land (Wasserstände in Fließgewässern) und im Boden (Grundwasserstände oder Bodenfeuchte) erfasst werden.
+                </p>
+         
+    </div>
+</div> 
+
+   <div id= "Klimaauswirkungen" class="card mb-4 ml-auto mr-auto" style="width: 100%; margin-bottom: 500px" data-aos="zoom-in">
+      <div class="card-body">
+                
+                <div>
+                    <h4 class="text-left">
+                     		Klimaauswirkungen im Kreis Viersen 
+                    </h4>   
+                </div>
+                <p>
+                Neben den meteorologischen Klimaentwicklungen und den hydro(geo)logischen Klimafolgen, gibt es weitere Auswirkungen die 
+                oftmals nicht ausreichend durch Daten beschrieben werden können. 
+                Hierzu zählen zum Beispiel die Auswirkungen auf Waldgebiete. Durch die Klimaentwicklung und die -folgen kommt es gerade in Waldgebieten zu erhöhter 
+                Waldbrandgefahr, Erosion und Schädlingen, welche den Waldbestand bedrohen. 
+                </p>
+         
+    </div>
+</div> 
+
+   <div id= "Klimafolgen" class="card mb-4 ml-auto mr-auto" style="width: 100%;" data-aos="zoom-in">
+      <div class="card-body">
+                
+                <div>
+                    <h4 class="text-left">
+                    </h4>   
+                </div>
+                <p>
+                <br> </br>
+                <br> </br>
+                <br> </br>
+                <br> </br>
+                <br> </br>
+                <br> </br>
+                </p>
+         
+    </div>
+</div> 
+
+<!╌################╌>
+    
+    
+        
+    {% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

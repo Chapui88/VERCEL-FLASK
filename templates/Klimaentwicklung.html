@@ -1,0 +1,1178 @@
+<div id="sidebar-wrapper">
+                <ul class="sidebar">
+                    <li style="text-align: left"> <a href=""><b>Klimaentwicklung im Kreis Viersen</b></a> </li>
+                    
+                    <li style="text-align: right"> <a href="#Temperaturentwicklung">Entwicklung der Lufttemperatur</a> </li>
+                    
+                    <li style="text-align: right"> <a href="#Entwicklung Kenntage">Entwicklung der Kenntage</a> </li>
+                    
+                    <li style="text-align: right"> <a href="#Entwicklung Hitzetage">Entwicklung der Hitzetage</a> </li>
+
+                    <li style="text-align: right"> <a href="#Entwicklung Niederschlag">Entwicklung des Niederschlags</a> </li>
+                    
+                    <li style="text-align: right"> <a href="#Entwicklung Starkregen">Entwicklung der Starkregenereignisse</a> </li>
+                 </ul> 
+</div>
+
+
+{% extends "layout.html" %}
+{% block content %}
+
+     <div id= "Klimaentwicklung" class="card mb-4 ml-auto mr-auto" style="width: 100%; margin-top: 140px" data-aos="zoom-in">
+      <div class="card-body">
+                
+                <div>
+                    <h4 class="text-left">
+                     	Klimaentwicklung im Kreis Viersen 
+                    </h4>   
+                </div>
+                <p>
+                Die Entwicklung des Klimas kann anhand von meteorologischen Größen wie die Lufttemperatur, 
+                den Niederschlag oder anhand von Kenntagen (Bsp: Hitzetage) dargestellt und analysiert werden.
+                Für die Analyse wird die Entwicklung der meteorologischen Größen für unterschiedliche Betrachtungszeiträume dargestellt.
+                </p>
+
+        </div>     
+         
+    </div>                   
+
+
+     <div id="Klimaentwicklung im Kreis Viersen" class="card mb-4 ml-auto mr-auto" style="width: 100%;" data-aos="zoom-in">
+      <div class="card-body">
+
+                
+                <div id="Temperaturentwicklung">
+                <h5 class="text-left">
+                Entwicklung der Lufttemperatur im Kreis Viersen im Zeitraum von 1952 - 2020
+                </h5>   
+                </div>
+                Der Klimawandel zeigt sich zum einen durch den Anstieg der mittleren globalen Lufttemperatur und zum anderen durch Klimaschwankungen und Extremereignissen wie Hitze- und Trockenperioden. 
+    				Dieser Trend ist auch in Deutschland und auf regionaler Ebene zu beobachten. Die mittlere Lufttemperatur eines Jahres alleine ist wenig aussagekräftig. 
+    				Mehr Informationen können durch die Abweichung des jährlichen Mittels gegenüber dem Mittelwert eines längeren, zurückliegenden Zeitraums abgeleitet werden. 
+    				Durch diese Abweichung, auch Anomalie genannt, wird ersichtlich, ob und wie stark ein Jahr kühler oder wärmer war als im klimatologischen Mittel. Eine übliche Darstellung hierfür sind sogenannte Warmingstripes oder Klimastreifen.
+    				Nachfolgend wird der Indikator bodennahe Lufttemperatur anhand unterschiedlichen Darstellungen verdeutlicht. 
+                
+                    
+ 
+    <div class="wrapper">
+       
+        <div class="outer_img_left">
+            <div class="img" id="chart3" style="display:flex;"></div>
+            <div class="img" id="chart5" style="display:none;"></div>
+            <div class="img" id="chart14" style="display:none;"></div>
+        </div>
+        
+        <div class="card-text">
+            Die nebenstehende Animation stellt die Entwicklung der bodennahen Lufttemperatur im Kreis Viersen als Monats- und Jahresmittelwerte oder als sogenannte Warmingstripes oder Klimastreifen dar.
+            Die Klimastreifen stellen die Temperaturanomalien im Kreis Viersen dar. 
+            In der Farbgebung wird die Mitte der Farbskala (blau und rot) auf die mittlere Temperatur im Kreis Viersen im Zeitraum 1952 - 2020 gelegt. 
+            Jahre mit tieferen Temperaturen, also Werten unter dem langjährigen Mittel, werden blau eingefärbt. 
+            Jahre mit höheren Temperaturen, also Werten unter dem langjährigen Mittel, werden rot eingefärbt.
+            Die minimale Temperaturanomalie des dargestellten Zeitraums erhält das Blau mit der höchsten Sättigung, die maximale das entsprechende Rot. 
+            Die Werte wurden hierbei auf einen Bereich zwischen -1 und 1 normiert.
+            Zu berücksichtigen ist, dass die Zeitreihe aus den Messwerten zweier unterschiedlichen Klimastationen besteht. 
+            Zum einen die Klimastation St. Tönis, welche vom 01. Dezember 1952 bis zum 19. Oktober 2004 verschiedene klimatische Parameter erfasst hat. 
+            Zum anderen die Klimastation Tönisvorst welche am 01. Dezember 2004 in Betrieb gegangen ist und bis heute Messwerte erfasst.
+			     Des Weiteren zeigen die Darstellungen den linearen Trend der bodennahen Lufttemperaturentwicklung. 
+        </div>
+         
+        <div class="buttons_frame">
+            <input class="buttons" id="Button1_1" type="button" value="Monats- und Jahresmittelwerte" onclick="switchVisible();"/>
+            <input class="buttons" id="Button1_2" type="button" value="Warmingstripes" onclick="switchVisible2();"/>
+            <input class="buttons" id="Button1_3" type="button" value="Klimaprojektion" onclick="switchVisible3();"/>
+        </div>     
+         
+    </div>                   
+ 
+                
+                <script type="text/javascript">
+                function switchVisible() {
+                            if (document.getElementById('chart3')) {
+                
+                                if (document.getElementById('chart3').style.display == 'none') {
+                                    document.getElementById('chart3').style.display = 'block';
+                                    document.getElementById('chart5').style.display = 'none';
+                                    document.getElementById('chart14').style.display = 'none';
+                                }
+                                else {
+                                    document.getElementById('chart3').style.display = 'block';
+                                    document.getElementById('chart5').style.display = 'none';
+                                    document.getElementById('chart14').style.display = 'none';
+                                    }}}
+                </script>
+                
+                <script type="text/javascript">
+                function switchVisible2() {
+                            if (document.getElementById('chart5')) {
+                                if (document.getElementById('chart5').style.display == 'none') {
+                                    document.getElementById('chart5').style.display = 'block';
+                                    document.getElementById('chart3').style.display = 'none';
+                                    document.getElementById('chart14').style.display = 'none';
+                                    }
+                                else {
+                                    document.getElementById('chart5').style.display = 'block';
+                                    document.getElementById('chart3').style.display = 'none';
+                                    document.getElementById('chart14').style.display = 'none';
+                                    }}}
+                </script>
+                
+                <script type="text/javascript">
+                function switchVisible3() {
+                            if (document.getElementById('chart14')) {
+                                if (document.getElementById('chart14').style.display == 'none') {
+                                    document.getElementById('chart14').style.display = 'block';
+                                    document.getElementById('chart3').style.display = 'none';
+                                    document.getElementById('chart5').style.display = 'none';
+                                    }
+                                else {
+                                    document.getElementById('chart14').style.display = 'block';
+                                    document.getElementById('chart3').style.display = 'none';
+                                    document.getElementById('chart5').style.display = 'none';
+                                    }}}
+                </script>       
+ 
+                                                         
+               
+                <a href="javascript: void(0);" onClick="toggle('qp7')">
+                <div 
+                class="header-6"
+                data-toggle="tooltip"
+                data-placement="left"
+                title="Auf Überschrift klicken um die Interpretation der Entwicklung anzuzeigen oder auszublenden">
+                <h6 class="text-left">
+                Entwicklung bis 2020
+                </h6>   
+                </div>
+                </a>
+
+                <p id = "qp7" style="display:block">
+    				Die Darstellungen der bodennahen Lufttemperaturentwicklung zeigt einen deutlichen Anstieg bis zum Jahr 2020. 
+    				Im Mittel ist die Jahrestemperatur im Zeitraum von 1952 bis 2020 um ca. 2° C gestiegen.
+    				Die Temperaturanomalien bestätigen diesen Trend. 
+    				Gerade bei der Ansicht der Jahresdurchschnittswerte zeigt sich ab den 1990er Jahren eine signifikante positive Abweichung der Jahresdurchschnittswerte im Vergleich zum langjährigen Mittelwert.
+                </p>
+                
+
+
+                <a href="javascript: void(0);" onClick="toggle('qp0')">
+                    <div class="header-6"
+                        data-toggle="tooltip"
+                        data-placement="left"
+                        title="Auf Überschrift klicken um die Interpretation der Entwicklung anzuzeigen oder auszublenden">
+                        <h6 class="text-left">
+                            Klimaprognose 2036-2098
+                        </h6>   
+                    </div>
+                </a>
+
+                <p id = "qp0" style="display:block;">
+                    Zur Mitte des 21 Jahrhunderts steigt im Szenario RCP2.6 die Lufttemperatur um 1,2 °C und im Szenario RCP8.5 um 1,8 °C . 
+                    Das mittlere Szenario (RCP4.5) projiziert eine Temperaturerhöhung von 1,4 °C. 
+                    Zum Ende des 21. Jahrhunderts erhöht sich die Lufttemperatur um 1,1 °C (RCP2.6), um 2,0 °C (RCP4.5) bzw. um 3,2 °C (RCP8.5).               
+                </p>
+
+                    
+                <script type="text/javascript">
+                function toggle(obj1) {
+                          var obj1=document.getElementById(obj1);
+                          if (obj1.style.display == "block") obj1.style.display = "none";
+                          else obj1.style.display = "block";
+                          }
+                </script>
+                
+                 
+                <a href="javascript: void(0);" onClick="toggle('q1')">
+                    <div class="header-5" data-toggle="tooltip"
+                        data-placement="left"
+                        title="Auf Überschrift klicken um die Interpretation der Entwicklung anzuzeigen oder auszublenden">
+                        <h6 class="text-left">
+                        Datenbasis
+                        </h6>   
+                    </div>
+                </a>
+                
+                <div id="q1" style="display:block;">   
+                    <p>
+                    Bei den Daten handelt es sich um qualitätsgeprüfte Messwerte und Beobachtungen. 
+                    Sie stammen aus Stationen des DWD oder rechtlich sowie qualitativ gleichgestellten Partnernetzstationen. 
+                    Umfangreiche Stationsmetadaten (Stationsverlegungen, Instrumentenwechsel, Wechsel der Bezugszeit, Änderungen in den Algorithmen) können über die Rohdaten abgerufen werden.                
+    				   </p>
+    				   <p>
+    				    Datenursprung: DWD Climate Data Center (CDC): Historische monatliche Stationsbeobachtungen (Temperatur, Druck, Niederschlag, Sonnenscheindauer, etc.) für Deutschland, Version v21.3, 2021.
+    				    <a href="https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/monthly/kl/historical/" target="_blank">Rohdaten des DWD</a>.
+    				   </p>
+                </div>
+      </div>
+   </div>
+   
+<!╌################╌>
+
+
+<div class="card mb-4 ml-auto mr-auto" style="width: 100%;" data-aos="zoom-in">
+      <div class="card-body">
+                
+                        <div id="Entwicklung Kenntage">
+                            <h5 class="text-left">
+                            Entwicklung der Kenntage im Kreis Viersen im Zeitraum von 1954 – 2020
+                            </h5>   
+                        </div>
+                        
+                        
+                                        
+               <div class="wrapper_table">
+                   <div class="outer_table">
+                       <div class="inner_table">
+                            <a href="javascript: void(0);" onClick="toggle('qp2')">
+                                <div class="header-6" data-toggle="tooltip"
+                                    data-placement="left"
+                                    title="Auf Überschrift klicken um die Interpretation der Entwicklung anzuzeigen oder auszublenden">
+                                    <h6 class="text-left" style="margin: 0 0 5px 10px">
+                                    Definitionen der Kenntage
+                                    </h6>   
+                                </div>
+                            </a>
+                            
+                            <div id = "qp2" class="table" style="display:block;">                
+                                <table>
+                                    <tr>
+                                        <td>Tropennacht: </td>
+                                        <td>
+                                            <ul> Minimale Lufttemperatur zwischen 18 Uhr und 6 Uhr liegt über 20 °C</ul>
+                                        </td>
+                                    </tr>
+                        				<tr>
+                                        <td>Sommertag:</td>
+                                        <td>
+                                            <ul>Maximale Lufttemperatur liegt über 25 °C</ul>
+                                        </td>
+                                    </tr>
+                        				<tr>
+                                        <td>Heißer Tag:</td>
+                                        <td>
+                                            <ul>Maximale Lufttemperatur liegt über 30 °C</ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Frosttag</td>
+                                        <td>
+                                            <ul>Minimale Lufttemperatur liegt unter 0 °C</ul>
+                                        </td>
+                                    </tr>  
+                                    <tr>
+                                        <td>Eistag:</td>
+                                        <td>
+                                            <ul>Maximale Lufttemperatur liegt unter 0 °C</ul>
+                                        </td>
+                                    </tr>                
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                      
+                    <div class="card-text" style="height:400px">
+                        Die Temperaturerhöhung hat eine direkte Auswirkung auf die Entwicklung von zahlreichen temperaturbezogenen Indikatoren. 
+                        Die Entwicklung der Anzahl unterschiedlicher Kenntagen wird hier untersucht. Nachfolgend werden die im Diagramm dargestellten Kenntage definiert.
+                        Zusätzlich ist der letzte Frosttag des Jahres dargestellt. Je früher der letzte Frosttag auftritt (niedrigerer Wert), desto früher fängt der Frühling an. Im Gegensatz dazu, je später dieser Tag auftritt, desto länger ist der Winter. Ein frühzeitiges Ende des Winters kann eine negative Auswirkung auf Vegetation und Landwirtschaft haben.
+                    </div>
+            </div>
+                        
+            <div class="wrapper">
+                <div class="outer_img_right">
+                    <div class="img" id="chart10" style="display:flex;"></div>
+                    <div class="img" id="chart9" style="display:none"></div>
+                    <div class="img" id="chart12" style="display:none; "></div>
+                </div>
+                <div class="card-text">
+                    Die nebenstehende Animation stellt die Entwicklung der Anzahl der Kenntage im Kreis Viersen im Zeitraum von 1954 - 2020 dar. 
+                    Je nach Auswahl, ist eine monatliche oder jährliche Darstellung der Anzahl der Kenntage möglich. 
+                    Zudem wird für die monatlichen und jährlichen Kenntage der lineare Trend dargestellt.
+                    Die letzte Auswahl unter den jährlichen Darstellungen stellt die Entwicklung des letzten Frosttages im Frühling dar. Hierbei ist der Tag des Jahres auf der vertikalen y-Achse angegeben.
+                 </div>
+                <div class="buttons_frame" style="display:inline-block; margin: 0px 0px 0px 150px">
+                    <input class="buttons" id="Button3_2" type="button" value="Jahreswerte [Tage pro Jahr]" onclick="switchVisible3_2();"/>
+                    <input class="buttons" id="Button3_1" type="button" value="Monatswerte [Tage pro Monat]" onclick="switchVisible3_1();"/>
+                    <input class="buttons" id="Button3_3" type="button" value="Klimaprojektion" onclick="switchVisible3_3();"/>
+                </div>
+            </div>                   
+                        
+                        
+                        <script type="text/javascript">
+                        function switchVisible3_1() {
+                                    if (document.getElementById('chart9')) {
+                        
+                                        if (document.getElementById('chart9').style.display == 'none') {
+                                            document.getElementById('chart9').style.display = 'block';
+                                            document.getElementById('chart10').style.display = 'none';
+                                            document.getElementById('chart12').style.display = 'none';
+                                        }
+                                        else {
+                                            document.getElementById('chart9').style.display = 'block';
+                                            document.getElementById('chart10').style.display = 'none';
+                                            document.getElementById('chart12').style.display = 'none';}}}
+                        </script>
+                        
+                        <script type="text/javascript">
+                        function switchVisible3_2() {
+                                    if (document.getElementById('chart10')) {
+                                        if (document.getElementById('chart10').style.display == 'none') {
+                                            document.getElementById('chart10').style.display = 'block';
+                                            document.getElementById('chart12').style.display = 'none';
+                                            document.getElementById('chart9').style.display = 'none';}
+                                        else {
+                                            document.getElementById('chart10').style.display = 'block';
+                                            document.getElementById('chart9').style.display = 'none';
+                                            document.getElementById('chart12').style.display = 'none';}}}
+                        </script>
+                        
+                        <script type="text/javascript">
+                        function switchVisible3_3() {
+                                    if (document.getElementById('chart12')) {
+                                        if (document.getElementById('chart12').style.display == 'none') {
+                                            document.getElementById('chart12').style.display = 'block';
+                                            document.getElementById('chart10').style.display = 'none';
+                                            document.getElementById('chart9').style.display = 'none';
+                                            }
+                                        else {
+                                            document.getElementById('chart12').style.display = 'block';
+                                            document.getElementById('chart9').style.display = 'none';
+                                            document.getElementById('chart10').style.display = 'none';
+                                            }}}
+                        </script>
+                        
+                                     
+                       
+                        <a href="javascript: void(0);" onClick="toggle('qp6')">
+                            <div class="header-6" data-toggle="tooltip"
+                                data-placement="left"
+                                title="Auf Überschrift klicken um die Interpretation der Entwicklung anzuzeigen oder auszublenden">
+                                <h6 class="text-left">
+                                Entwicklung bis 2020
+                                </h6>   
+                            </div>
+                        </a>
+        
+        
+                        <p id = "qp6" style="display:block">
+                        Die Darstellung der Kenntage zeigt einen deutlichen Anstieg bei der Anzahl an Tagen mit hoher Hitzebelastung. 
+                        Sommertage und Heiße Tage haben in den letzten Jahrzenten deutlich zugenommen. 
+                        Die Heißen Tage haben sich im Zeitraum von 1990-2020 im Vergleich zum Zeitraum von 1950-1980 im Mittelwert sogar verdoppelt. 
+                        Auch Tropennächte kommen im Kreis Viersen häufiger vor. 
+                        Im Gegensatz dazu, ist die Anzahl der Frost- und Eistage in den letzten 70 Jahren deutlich gesunken. 
+                        Die Anzahl der Frost- und Eistage hat sich im Zeitraum von 1990-2020 im Vergleich zum Zeitraum von 1950-1980 nahezu halbiert.
+                        Die Darstellung des letzten Frosttages im Frühling zeigt, dass es immer früher im Jahr zu einer frostfreien Zeit kommt.
+                        </p>
+                        
+                        
+        
+                        
+               <div class="wrapper_table">
+                        <a href="javascript: void(0);" onClick="toggle('qp1')">
+                            <div class="header-6" data-toggle="tooltip"
+                                data-placement="left"
+                                title="Auf Überschrift klicken um die Interpretation der Entwicklung anzuzeigen oder auszublenden">
+                                    <h6 class="header-6" style="margin: 10px 0 5px 10px">
+                                    Klimaprognose 2036-2098
+                                    </h6>   
+                            </div>
+                        </a>                  
+                   <div class="outer_table" style="float: none; width: 90%">
+                   
+                       <div class="inner_table"  style="float: none;">
+                       
+                        <div id = "qp1" class="table" style="display:block;">
+                            <table>
+                                <tr>
+                                    <td>Tropennächte: </td>
+                                    <td>
+                                        <ul>
+                                            Mitte des 21 Jahrhunderts steigt die Anzahl der Tropennächte im Szenario RCP2.6 um 0,3 und um 2 im Szenario RCP8.5. 
+                                                Das mittlere Szenario (RCP4.5) projiziert eine Erhöhung der Tropennächte von 1,2. 
+                                                Zum Ende des 21 Jahrhunderts erhöht sich die Anzahl der Tropennächte um 0,6 (RCP2.6), um 1,7 (RCP4.5) bzw. um 6,7 (RCP8.5).
+                                         </ul>
+                                    </td>
+                                </tr>
+                    				<tr>
+                                    <td>Sommertage:</td>
+                                    <td>
+                                        <ul>
+                                            Mitte des 21 Jahrhunderts steigt die Anzahl der Sommertage im Szenario RCP2.6 um 8,3 und um 11,9 im Szenario RCP8.5. 
+                                                Das mittlere Szenario (RCP4.5) projiziert eine Erhöhung der Sommertage von 11,2. 
+                                                Zum Ende des 21 Jahrhunderts erhöht sich die Anzahl der Sommertage um 7,8 (RCP2.6), um 14,4 (RCP4.5) bzw. um 26,1 (RCP8.5). 
+                                                Es ist eine rückläufige Entwicklung beim Szenario RCP2.6 zu erkennen.
+                                         </ul>
+                                    </td>
+                                </tr>
+                    				<tr>
+                                    <td>Heiße Tage:</td>
+                                    <td>
+                                        <ul>
+                                        Mitte des 21 Jahrhunderts steigt die Anzahl der Heißen Tage im Szenario RCP2.6 um 2,2 und um 4 bei Szenario RCP8.5. 
+                                                Das mittlere Szenario (RCP4.5) projiziert eine Erhöhung der Heißen Tage von 3,9. 
+                                                Zum Ende des 21 Jahrhunderts erhöht sich die Anzahl der Heißen Tage um 1,8 (RCP2.6), um 4,5 (RCP4.5) bzw. um 10 (RCP8.5). 
+                                                Es ist eine rückläufige Entwicklung beim Szenario RCP2.6 zu erkennen.
+                                         </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Frosttage:</td>
+                                    <td>
+                                        <ul>
+                                            Mitte des 21 Jahrhunderts sinkt die Anzahl der Frosttage im Szenario RCP2.6 um 16,6 und im Szenario RCP 8.5 um 25,4. 
+                                            Das mittlere Szenario (RCP4.5) projiziert eine Minderung der Frosttage von 24,2. 
+                                            Zum Ende des 21 Jahrhunderts sinkt die Anzahl der Frosttage um 15,1 (RCP2.6), um 30,7 (RCP4.5) bzw. um 39,5 (RCP8.5). 
+                                            Es ist eine rückläufige Entwicklung beim Szenario RCP2.6 zu erkennen.</li>
+                                         </ul>
+                                    </td>
+                                </tr>  
+                                <tr>
+                                    <td>Eistage:</td>
+                                    <td>
+                                        <ul>
+                                            Mitte des 21 Jahrhunderts sinkt die Anzahl der Eistage im Szenario RCP2.6 um 6,3 bei und um 7,1 im Szenario RCP8.5. 
+                                            Das mittlere Szenario (RCP4.5) projiziert eine Minderung der Eistage von 6,9. 
+                                            Zum Ende des 21 Jahrhunderts sinkt die Anzahl der Eistage um 6,3 (RCP2.6), um 8 (RCP4.5) bzw. um 9,7 (RCP8.5). 
+                                            Es ist eine gleichbleibende Entwicklung beim Szenario RCP2.6 zu erkennen.
+                                         </ul>
+                                    </td>
+                                </tr>                
+                            </table>
+                        </div>    			
+                   </div>    			
+                </div>    			
+           </div>    			
+        
+                        <script type="text/javascript">
+                        function toggle(obj) {
+                                  var obj=document.getElementById(obj);
+                                  if (obj.style.display == "block") obj.style.display = "none";
+                                  else obj.style.display = "block";}
+                        </script>
+                         
+                         
+                        <a href="javascript: void(0);" onClick="toggle('q3')">
+                            <div class="header-5" data-toggle="tooltip"
+                                data-placement="left"
+                                title="Auf Überschrift klicken um die Interpretation der Entwicklung anzuzeigen oder auszublenden">
+                                <h6 class="text-left">
+                                Datenbasis
+                                </h6>   
+                            </div>
+                        </a>
+                        
+                        <div id="q3" style="display:block;">   
+                            <p>
+                            Bei den Daten handelt es sich um qualitätsgeprüfte Messwerte und Beobachtungen. 
+                            Sie stammen aus Stationen des DWD oder rechtlich sowie qualitativ gleichgestellten Partnernetzstationen. 
+                            Umfangreiche Stationsmetadaten (Stationsverlegungen, Instrumentenwechsel, Wechsel der Bezugszeit, Änderungen in den Algorithmen) können über die Rohdaten abgerufen werden.
+                            </p>
+                				<p>
+                    			Datenursprung: DWD Climate Data Center (CDC), Historische monatliche Stationsbeobachtungen (Statiosbasierte Klimaindizes) für Deutschland, 2021.
+                    			<a href="https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/monthly/climate_indices/kl/" target="_blank">Rohdaten des DWD</a>.
+            				      </p>                 
+                        </div>                
+     </div>         
+  </div>         
+  
+           
+<!╌################╌>
+
+
+	 <div class="card mb-4 ml-auto mr-auto" style="width: 100%;" data-aos="zoom-in">
+       <div class="card-body">
+
+                <div id= "Entwicklung Hitzetage" class="header-5">
+                <h5 class="text-left">
+                Entwicklung der Hitzetage im Kreis Viersen im Zeitraum von 1961 – 2020
+                </h5>   
+                </div>
+               
+                <p>
+                Neben dem Indikator Lufttemperaturen, ist die Anzahl an heißen Tagen, oder „Hitzetagen“ ein wichtiger Indikator zur Verdeutlichung der Auswirkungen des Klimawandels. 
+    				Ein Hitzetag wird durch den Deutschen Wetterdienst definiert als ein Tag mit einer maximalen Lufttemperatur über 30 °C. 
+    				Hohe Lufttemperaturen wirken sich nicht nur direkt negativ auf den menschlichen Körper beispielsweise in Form von Kreislaufproblemen aus. Gemeinsam mit intensiver Sonneneinstrahlung führen hohe Lufttemperaturen zur Bildung von Ozon und zur Reizung von Atemwegen.
+                </p>
+                
+                
+                
+    <div class="wrapper">
+        <div class="outer_img_right">
+
+                <div class="img" id="chart1" style="display:flex;"></div>
+                <div class="img" id="chart2" style="display:none;"></div>
+                <div class="img" id="chart13" style="display:none;"></div>
+               
+        </div>
+        <div class="card-text">
+            Die nebenstehende Animation stellt die Entwicklung der Hitzetage im Kreis Viersen im Zeitraum von 1961 – 2020 dar. 
+            Die Raster-Abbildungen zeigen, je nach Auswahl, die jährlichen Mittelwerte oder ein 30-jähriges Mittel der Raster mit der räumlichen Auflösung 1 km x 1 km der Anzahl der Heißen Tage für den Kreis Viersen. 
+        <br></br>
+        <br></br>
+        </div>
+        <div class="buttons_frame" style="display:inline-block; margin: 0px 0px 0px 150px">
+                <input class="buttons" id="Button5_1" type="button" value="30-jähriges Mittel" onclick="switchVisible5();"/>
+                <input class="buttons" id="Button5_2" type="button" value="Jahreswerte" onclick="switchVisible6();"/>
+                <input class="buttons" id="Button5_3" type="button" value="Klimaprojektion" onclick="switchVisible7();"/>
+        </div>
+    </div>                     
+                
+              
+                
+                <script type="text/javascript">
+                function switchVisible5() {
+                            if (document.getElementById('chart1')) {
+                                if (document.getElementById('chart1').style.display == 'none') {
+                                    document.getElementById('chart1').style.display = 'block';
+                                    document.getElementById('chart2').style.display = 'none';
+                                    document.getElementById('chart13').style.display = 'none';
+                                }
+                                else {
+                                    document.getElementById('chart1').style.display = 'block';
+                                    document.getElementById('chart2').style.display = 'none';
+                                    document.getElementById('chart13').style.display = 'none';
+                                    }}}
+                </script>
+                
+                <script type="text/javascript">
+                function switchVisible6() {
+                            if (document.getElementById('chart2')) {
+                                if (document.getElementById('chart2').style.display == 'none') {
+                                    document.getElementById('chart2').style.display = 'block';
+                                    document.getElementById('chart1').style.display = 'none';
+                                    document.getElementById('chart13').style.display = 'none';
+                                    }
+                                else {
+                                    document.getElementById('chart2').style.display = 'block';
+                                    document.getElementById('chart1').style.display = 'none';
+                                    document.getElementById('chart13').style.display = 'none';
+                                    }}}
+                </script>
+                
+                <script type="text/javascript">
+                function switchVisible7() {
+                            if (document.getElementById('chart13')) {
+                                if (document.getElementById('chart13').style.display == 'none') {
+                                    document.getElementById('chart13').style.display = 'block';
+                                    document.getElementById('chart1').style.display = 'none';
+                                    document.getElementById('chart2').style.display = 'none';
+                                    }
+                                else {
+                                    document.getElementById('chart13').style.display = 'block';
+                                    document.getElementById('chart1').style.display = 'none';
+                                    document.getElementById('chart2').style.display = 'none';
+                                    }}}
+                </script>
+
+         
+         
+               <div class="wrapper_table">
+               
+                            <a href="javascript: void(0);" onClick="toggle('qp3')">
+                                <div class="header-6" data-toggle="tooltip"
+                                    data-placement="left"
+                                    title="Auf Überschrift klicken um die Interpretation der Entwicklung anzuzeigen oder auszublenden">
+                                    <h6 class="text-left" style="margin: 0 0 5px 10px">
+                                    Jahre mit den meisten Hitzetagen im Zeitraum von 1961 bis 2022
+                                    </h6>   
+                                </div>
+                            </a>               
+                   <div class="outer_table" style="width:45%">
+                       <div class="inner_table">
+                            
+                           
+                
+                                
+                                    <div id = "qp3" class="table" style="display:block;">
+                                        <table>
+                                            <tr>
+                                                <td><b>Jahr</b></td>
+                                                <td><b>Anzahl der Hitzetage pro Jahr</b></td>
+                                            </tr>
+                            				<tr>
+                                                <td>2020</td>
+                                                <td> <center> 20 </center></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2019</td>
+                                                <td> <center> 19 </center></td>
+                                            </tr>   
+                            				<tr>
+                                                <td>2018</td>
+                                                <td> <center> 22 </center></td>
+                                            </tr>
+                            				<tr>
+                                                <td>2015</td>
+                                                <td> <center> 15 </center></td>
+                                            </tr>
+                            				<tr>
+                                                <td>2006</td>
+                                                <td> <center> 21 </center></td>
+                                            </tr>
+                            				<tr>
+                                                <td>2003</td>
+                                                <td> <center> 19 </center></td>
+                                            </tr>
+                            				<tr>
+                                                <td>1995</td>
+                                                <td> <center> 21 </center></td>
+                                            </tr>
+                            				<tr>
+                                                <td>1994</td>
+                                                <td> <center> 19 </center></td>
+                                            </tr>
+                            				<tr>
+                                                <td>1976</td>
+                                                <td> <center> 21 </center></td>
+                                            </tr>
+                            				<tr>
+                                                <td>1973</td>
+                                                <td> <center> 16 </center></td>
+                                            </tr>
+                                        </table>
+                                    </div>                
+                        </div>                
+                </div>                
+                
+                        
+                    <div style="height: 525px">
+                        <a href="javascript: void(0);" onClick="toggle('qp5')">
+                            <div class="header-6" data-toggle="tooltip"
+                                data-placement="left"
+                                title="Auf Überschrift klicken um die Interpretation der Entwicklung anzuzeigen oder auszublenden">
+                                <h6 class="text-left" style="margin-top: 20px">
+                                Entwicklung bis 2020
+                                </h6>   
+                            </div>
+                        </a>
+                        <div id = "qp5" style="display:block;">
+                        Die Darstellung der Hitzetage der letzten 60 Jahre zeigt eine deutliche Zunahme an Tagen mit einer maximalen Lufttemperatur von über 30 °C. 
+                        Während es im Betrachtungszeitraum von 1961 – 1990, im Durchschnitt 5 bis 6 heiße Tage pro Jahr gegeben hat sind es im Betrachtungszeitraum von 1991 – 2020, im Durchschnitt 9 bis 11 heiße Tage pro Jahr. 
+                        Dieser nahezu lineare Trend wird durch die Werte der dazwischenliegenden Betrachtungszeiträume bestätigt (1971 – 2000: 6 bis 7 Tage pro Jahr, 1981 – 2010: 7 bis 8 Tage pro Jahr).
+            				  Dieser Trend kann auch durch die Darstellung der Jahresdurchschnittswerte. Auch wenn die Werte dieses Indikators über die Jahre schwanken, ist der Trend hin zu einer höheren Anzahl an Hitzetagen zu erkennen. 
+                			 Es ist zu erkennen, dass gerade in den Jahren nach 2010, die Anzahl an Hitzetagen deutlich gestiegen ist.
+                			dies verdeutlicht auch die nachfolgende Tabelle. 
+            				</div>
+            				
+            				
+            				 <a href="javascript: void(0);" onClick="toggle('qp4')">
+                            <div class="header-6" data-toggle="tooltip"
+                                data-placement="left"
+                                title="Auf Überschrift klicken um die Interpretation der Entwicklung anzuzeigen oder auszublenden">
+                                <h6 class="text-left">
+                                    Klimaprognose 2036-2098
+                                </h6>   
+                            </div>
+                        </a>
+    			
+                        <div id = "qp4" style="display:block">
+                        Mitte des 21 Jahrhunderts steigt die Anzahl der Heißen Tage im Szenario RCP2.6 um 2,2 und um 4 bei Szenario RCP8.5. 
+                        Das mittlere Szenario (RCP4.5) projiziert eine Erhöhung der Heißen Tage von 3,9. 
+                        Zum Ende des 21 Jahrhunderts erhöht sich die Anzahl der Heißen Tage um 1,8 (RCP2.6), um 4,5 (RCP4.5) bzw. um 10 (RCP8.5). 
+                        Es ist eine rückläufige Entwicklung beim Szenario RCP2.6 zu erkennen.    			
+                        </div>
+                    </div>
+                </div>           
+                
+
+                        <a href="javascript: void(0);" onClick="toggle('q3')">
+                            <div class="header-5" data-toggle="tooltip"
+                                data-placement="left"
+                                title="Auf Überschrift klicken um die Interpretation der Entwicklung anzuzeigen oder auszublenden">
+                                <h6 class="text-left">
+                                Datenbasis
+                                </h6>   
+                            </div>
+                        </a>
+                        
+                        <div id="q3" style="display:block">   
+                            <p>
+                            Die Rasterdaten werden über ein Regressionsverfahren auf Basis des Stationsmessnetzes des Kreis Viersen bestimmt. 
+                            Somit ist die tatsächliche Informationsdichte von der Stationsver-teilung abhängig. 
+                            Die tatsächliche Informationsdichte ist von der Stationsverteilung bestimmt.
+                            </p>
+                				<p>
+                    			Datenursprung: DWD Climate Data Center (CDC), Vieljähriges Mittel der Raster der Anzahl der Heißen Tage für Deutschland, Version v1.0.  
+                            Die Raster wurden aus Daten der DWD-Stationen und qualitativ gleichgestellten Partnernetzstationen in Deutschland abgeleitet, unter Berücksichtigung der Höhenabhängigkeiten.
+                    			<a href="https://opendata.dwd.de/climate_environment/CDC/grids_germany/multi_annual/hot_days/" target="_blank">Rohdaten des DWD</a>.
+            				      </p>                 
+                        </div>                
+        </div>
+		</div>
+
+  
+<!╌################╌>
+  
+                
+            <div class="card mb-4 ml-auto mr-auto" style="width: 100%;" data-aos="zoom-in">
+            <div class="card-body">
+
+                <div id="Entwicklung Niederschlag" class="header-5">
+                <h5 class="text-left">
+                Entwicklung des Niederschlags im Kreis Viersen im Zeitraum von 1952 - 2020
+				
+                </h5>   
+                </div>
+
+                <p>
+                Der Klimawandel  kann nicht nur anhand der Indikatoren Lufttemperatur und Hitzetage analysiert werden. 
+    				Gerade die Betrachtung des Niederschlagsgeschehens kann einen aufschlussreichen Beitrag zur Analyse beitragen.
+    				Hierbei kann ähnlich wie bei der Betrachtung der Temperaturveränderungen auf zwei wesentlichen Indikatoren zurückgegriffen werden. 
+    				Zum einen kann die Betrachtung der mittleren monatlichen, saisonalen und jährlichen Niederschlagswerte, im Vergleich zu ihren langjährigen Mittelwerten, Aufschluss über die Klimaentwicklung geben.
+    				Zum anderen können Extremereignisse wie Starkregenereignisse als Kenntage erfasst werden und die lokalen Auswirkungen des Klimawandels verdeutlichen.
+                </p>
+
+
+            <div class="wrapper">
+                <div class="outer_img_left">
+                    <div class="img" id="chart8" style="display:flex;"></div>
+                    <div class="img" id="chart11" style="display:none; "></div>
+                    <div class="img" id="chart15" style="display:none; "></div>
+                    <div class="img" id="chart16" style="display:none; "></div>
+                    <div class="img" id="chart17" style="display:none; "></div>
+                </div>
+                
+                
+                <div class="card-text">
+                    Die nebenstehende Animation stellt die Entwicklung des Niederschlags im Zeitaum von 1952 - 2020 dar. 
+                    Dargestellt werden können die Summen der Monate, Jahre und Jahreszeiten sowie die langjährigen linearen Trendlinien oder  
+                    die Anzahl an Tagen mit einer Niederschlagshöhe größer 10, 20 oder 30 mm und die Anzahl an Tockentagen pro Jahr. 
+                    Ein Trockentag ist definiert als ein Tag mit einer Niederschlagsmenge kleiner als 1mm pro Tag.
+                    Zudem werden für die monatlichen und jährlichen Niederschlagssummendarstellungen ein Trend für den Zeitraum ab dem Jahr 1990 angegeben.
+
+                </div>
+                
+                <div class="buttons_frame" style="display: inline-block">
+                    <input class="buttons" id="Button6_1" type="button" value="Niederschlagssummen" onclick="switchVisible8();"/>
+                    <input class="buttons" id="Button6_2" type="button" value="Niederschlagshöhe > 10, 20, 30 [mm/d]" onclick="switchVisible9();"/>
+                    <input class="buttons" id="Button6_4" type="button" value="Trockentage" onclick="switchVisible11();"/>
+                    <input class="buttons" id="Button6_3" type="button" value="Klimaprojektion - Niederschlag" onclick="switchVisible10();"/>
+                    <input class="buttons" id="Button6_5" type="button" value="Klimaprojektion - Trockentage" onclick="switchVisible12();"/>
+                </div>
+            </div>   
+ 
+
+
+                <script type="text/javascript">
+                function switchVisible8() {
+                            if (document.getElementById('chart8')) {
+                
+                                if (document.getElementById('chart8').style.display == 'none') {
+                                    document.getElementById('chart8').style.display = 'block';
+                                    document.getElementById('chart11').style.display = 'none';
+                                    document.getElementById('chart15').style.display = 'none';
+                                    document.getElementById('chart16').style.display = 'none';
+                                    document.getElementById('chart17').style.display = 'none';
+                                }
+                                else {
+                                    document.getElementById('chart8').style.display = 'block';
+                                    document.getElementById('chart11').style.display = 'none';
+                                    document.getElementById('chart15').style.display = 'none';
+                                    document.getElementById('chart16').style.display = 'none';
+                                    document.getElementById('chart17').style.display = 'none';
+                                    }}}
+                </script>
+                
+                <script type="text/javascript">
+                function switchVisible9() {
+                            if (document.getElementById('chart11')) {
+                                if (document.getElementById('chart11').style.display == 'none') {
+                                    document.getElementById('chart11').style.display = 'block';
+                                    document.getElementById('chart8').style.display = 'none';
+                                    document.getElementById('chart15').style.display = 'none';
+                                    document.getElementById('chart16').style.display = 'none';
+                                    document.getElementById('chart17').style.display = 'none';
+                                    }
+                                else {
+                                    document.getElementById('chart11').style.display = 'block';
+                                    document.getElementById('chart8').style.display = 'none';
+                                    document.getElementById('chart15').style.display = 'none';
+                                    document.getElementById('chart16').style.display = 'none';
+                                    document.getElementById('chart17').style.display = 'none';
+                                    }}}
+                </script>
+               
+                <script type="text/javascript">
+                function switchVisible10() {
+                            if (document.getElementById('chart15')) {
+                                if (document.getElementById('chart15').style.display == 'none') {
+                                    document.getElementById('chart15').style.display = 'block';
+                                    document.getElementById('chart8').style.display = 'none';
+                                    document.getElementById('chart11').style.display = 'none';
+                                    document.getElementById('chart16').style.display = 'none';
+                                    document.getElementById('chart17').style.display = 'none';
+                                    }
+                                else {
+                                    document.getElementById('chart15').style.display = 'block';
+                                    document.getElementById('chart8').style.display = 'none';
+                                    document.getElementById('chart11').style.display = 'none';
+                                    document.getElementById('chart16').style.display = 'none';
+                                    document.getElementById('chart17').style.display = 'none';
+                                    }}}
+                </script>                
+                
+                <script type="text/javascript">
+                function switchVisible11() {
+                            if (document.getElementById('chart16')) {
+                                if (document.getElementById('chart16').style.display == 'none') {
+                                    document.getElementById('chart16').style.display = 'block';
+                                    document.getElementById('chart8').style.display = 'none';
+                                    document.getElementById('chart11').style.display = 'none';
+                                    document.getElementById('chart15').style.display = 'none';
+                                    document.getElementById('chart17').style.display = 'none';
+                                    }
+                                else {
+                                    document.getElementById('chart16').style.display = 'block';
+                                    document.getElementById('chart8').style.display = 'none';
+                                    document.getElementById('chart11').style.display = 'none';
+                                    document.getElementById('chart15').style.display = 'none';
+                                    document.getElementById('chart17').style.display = 'none';
+                                    }}}
+                </script>   
+                
+                <script type="text/javascript">
+                function switchVisible12() {
+                            if (document.getElementById('chart17')) {
+                                if (document.getElementById('chart17').style.display == 'none') {
+                                    document.getElementById('chart17').style.display = 'block';
+                                    document.getElementById('chart8').style.display = 'none';
+                                    document.getElementById('chart11').style.display = 'none';
+                                    document.getElementById('chart15').style.display = 'none';
+                                    document.getElementById('chart16').style.display = 'none';
+                                    }
+                                else {
+                                    document.getElementById('chart17').style.display = 'block';
+                                    document.getElementById('chart8').style.display = 'none';
+                                    document.getElementById('chart11').style.display = 'none';
+                                    document.getElementById('chart15').style.display = 'none';
+                                    document.getElementById('chart16').style.display = 'none';
+                                    }}}
+                </script>                  
+            
+            
+                     
+               <div class="wrapper_table">
+               
+                          <a href="javascript: void(0);" onClick="toggle('qp8')">
+                                <div class="header-6">
+                                <h6 class="text-left"  style="margin: 5px 0 5px 10px">
+                    			  Unterteilung der meteorologischen Jahreszeiten:
+                                </h6>   
+                                </div>
+                            </a>        
+                                   
+                   <div class="outer_table" style="width:58%">
+                       <div class="inner_table">
+
+                          
+                			
+                            <div  id = "qp8" class="table" style="display:block">
+                                <table>
+                                <tr>
+                                    <td><b>Jahreszeit:</b></td>
+                                    <td><b>Monate:</b></td>
+                                 </tr>
+                                 
+                                 <tr>
+                                    <td>Frühling</td>
+                                    <td>März, April, Mai</td>
+                                 </tr>
+                                 
+                                 <tr>
+                                    <td>Sommer</td>
+                                    <td>Juni, Juli, August</td>
+                                 </tr>
+                                 <tr>
+                                    <td>Herbst</td>
+                                    <td>September, Oktober, November</td>
+                                 </tr> 
+                                 <tr>
+                                    <td>Winter</td>
+                                    <td>Dezember, Januar, Februar</td>
+                                 </tr>
+                                </table>
+                            </div>
+                            
+                          </div>
+                     </div>
+                    <div style="height: 275px;">
+                            <p> <br> </p>
+                             <p> <br> </p>
+                            Die Jahreszeiten orientieren sich nicht an einem gewöhnlichen Kalenderjahr, sondern an die meteorologische Einteilung. 
+                            Meteorologischen werden  die Jahreszeiten wie nebenstehd unterteilt.
+                  </div>
+              </div>
+                             
+               
+                <a href="javascript: void(0);" onClick="toggle('qp9')">
+                <div class="header-6" data-toggle="tooltip"
+                data-placement="left"
+                title="Auf Überschrift klicken um die Interpretation der Entwicklung anzuzeigen oder auszublenden">
+                <h6 class="text-left">
+                Entwicklung bis 2020
+                </h6>   
+                </div>
+                </a>
+               
+                
+                <p id = "qp9"  style="display:block">
+       			 Im Vergleich zur Temperaturentwicklung ist der Trend der Niederschlagsentwicklung weniger eindeutig. Für den Gesamtzeitraum von 1952 bis 2020 kann eine 
+    		    	 leichte Abnahme der monatlichen und jährlichen Niederschläge beobachtet werden. 
+    		    	 Diese Beobachtung wird durch die Einzelbetrachtungen der jahreszeitlichen Niederschlagssummengrundsätzlich bestätigt. 
+    		    	 Im Detail kann beobachtet werden, dass die reduzierten Niederschläge vor allem im Frühling und Sommer stattfinden, während die Niederschlagshöhen im Herbst und im Winter mehr oder weniger gleichbleibend sind.
+                Wird nur der Zeitraum ab dem Jahr 1990 betrachtet, ist zudem ein deutlicher Rückgang der monatlichen und jährlichen Niederschlagsmengen ersichtlich. 
+                Die Darstellungen der Tage mit einer Niederschlagshöhe größer 10, 20 oder 30 mm zeigen keinen signifikanten Trend. 
+                Hingegen kann bei der Betrachtung der Anzahl an Trockentagen pro Jahr, ein kontinuierlicher Anstieg in den letzten Jahrzehnten beobachtet werden.
+                
+                Der oben beschriebenen Reduzierung der Niederschläge in den Frühlings- und Sommermonaten und Zunahme an Trockentagen steht wiederum eine Zunahme von Starkregenereignissen gegenüber, 
+                welche im nachfolgenden Kapitel näher beschrieben wird. 
+                Ein wichtiger Faktor dabei spielt die Abschwächung des Jetstreams im Zuge des fortschreitenden Klimawandels. 
+                Hoch- und Tiefdruckgebiete verlaufen langsamer und können mehrere Wochen an einem Ort verharren. 
+                Dies führt auf der einen Seite zu längeren Trockenperioden (wie in den Jahren 2018 – 2020, verdeutlicht im folgenden Abschnitt <a href="#duerre">Dürreentwicklung</a>), sowie auf der anderen Seite zu ergiebigeren Niederschlagsereignissen.
+                
+                Die Niederschlagsentwicklung hat weitreichende Auswirkungen und Folgen auf unterschiedlichste (hydro)geologische und pedologische Entwicklungen. 
+                Von diesen Entwicklungen sind wiederum verschiedene Branchen und Akteure maßgeblich betroffen. 
+                In Arbeitspaket 1.2 „Analyse der Auswirkungen, Betroffenheit und Schnittstellen“ des Klimafolgenanpassungskonzepts Kreis Viersen (Stufe 1) wird dies für das Kreisgebiet näher beleuchtet. 
+                </p>
+
+
+                
+                <a href="javascript: void(0);" onClick="toggle('qp10')">
+                <div class="header-6">
+                <h6 class="text-left">
+                Klimaprognose 2036-2098
+                </h6>   
+                </div>
+                </a>
+    			
+                <p id = "qp10"  style="display:block">
+                Die Klimaprojektionen zeigen in Bezug auf den Gesamtniederschlag etwa gleichbleibende Mengen (im Median), was insbesondere im Frühjahr /
+                 Sommer nicht dem Trend aus der Vergangenheit entspricht. Die projizierten Trockentage zeigen im Median für Sommer und Herbst eine
+                  leichte Erhöhung an, dies entspricht wiederum dem Trend aus den vergangenen Jahrzehnten. Letzteres kann, zusammen mit der
+                   oben beschriebenen längeren Verweildauer von Hoch- und Tiefdruckgebieten, als Hinweis auf eine sich weiter erhöhende Gefahr
+                    von Trockenstress bzw. häufigere und stärker ausgeprägte sommerliche Trockenperioden in den nächsten Jahrzehnten gewertet werden.
+                </p>                
+                
+                
+                
+                        <a href="javascript: void(0);" onClick="toggle('q5')">
+                            <div class="header-5" data-toggle="tooltip"
+                                data-placement="left"
+                                title="Auf Überschrift klicken um die Interpretation der Entwicklung anzuzeigen oder auszublenden">
+                                <h6 class="text-left">
+                                Datenbasis
+                                </h6>   
+                            </div>
+                        </a>
+                        
+                        <div id="q5" style="display:block;">   
+                            <p>
+                            Bei den Daten handelt es sich um qualitätsgeprüfte Messwerte und Beobachtungen. Sie stammen aus Stationen des DWD oder rechtlich sowie 
+                			   qualitativ gleichgestellten Partnernetzstationen. Umfangreiche Stationsmetadaten (Stationsverlegungen, Instrumentenwechsel, Wechsel der Bezugszeit, Änderungen in den Algorithmen) können über die Rohdaten abgerufen werden. 
+                			    </p>
+                				<p>
+                    			Datenursprung: DWD Climate Data Center (CDC): Historische monatliche Stationsbeobachtungen (Temperatur, Druck, Niederschlag, Sonnenscheindauer, etc.) für Deutschland, Version v21.3, 2021.
+                    			<a href="https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/monthly/kl/historical/" target="_blank">Rohdaten des DWD</a>.
+            				      </p>                 
+                        </div>                    
+                
+
+            </div>
+            </div>
+
+
+<!╌################╌>
+              
+ 
+            
+            <div class="card mb-4 ml-auto mr-auto" style="width: 100%;" data-aos="zoom-in">
+            <div class="card-body">
+           
+    
+                    <div id= "Entwicklung Starkregen" class="header-5">
+                        <h5 class="text-left">
+                        Entwicklung der Starkregenereignisse im Kreis Viersen von 2003 - 2020
+                        </h5>   
+                    </div>
+    
+                    <p>
+    				Neben dem Indikator Niederschlagsentwicklung, ist die Anzahl und die Intensität von Starkregenereignissen ein wichtiger Indikator zur Verdeutlichung der Auswirkungen des Klimawandels. 
+    				Durch die deutlich steigenden Temperaturen kann die Atmosphäre mehr Wasserdampf aufnehmen. 
+    				Dieser steht nachfolgend für insgesamt höhere und stärkere Niederschlagsmengen zur Verfügung. 
+    				Wo, wann und wie intensiv diese Niederschläge fallen wird durch die Zugbahnen von Hoch- und Tiefdruckgebieten bestimmt. 
+    				Diese werden sich, wie bereits beschreiben durch den anthropogen Klimawandel weiter deutlich verändern. 
+    				Dadurch können sich Hochdruckgebiete mit trockenen Wetterphasen ebenso dauerhaft festsetzen, wie Wetterphasen mit vielen und langanhaltenden Starkregenereignissen.
+                    </p>
+                    
+                
+                
+        <div class="wrapper">
+            <div class="outer_img_right">
+                    <div class="img" id="chart" style="display:flex;"></div>
+                    <div class="img" id="chart0" style="display:none;"></div>
+            </div>
+        
+                <div class="buttons_frame">
+                    <input class="buttons" id="Button0_1" type="button" value="mind. Warnstufe 3" onclick="switchVisible0();"/>
+                    <input class="buttons" id="Button0_2" type="button" value="Jährlichkeit > T5" onclick="switchVisible01();"/>
+                </div>
+                
+                        
+            <div class="card-text">
+                    Die nebenstehende Darstellungen zeigen zum einen die Entwicklung der Starkregenereignisse bestimmter Dauerstufen (Darstellung ist in ieser Version des Berichts noch nicht enthalten) um zum anderen die erfassten Starkregenereignisse im Kreis Vieren seit 2001.
+                    Grundlage für letztere Darstellung ist der Katalog der räumlich und zeitlich unabhängiger Starkregenereignisse (CatRaRE) des DWD.
+                    
+                    Der Katalog basiert auf den klimatologisch aufbereiteten Daten des DWD-Radarverbunds (RADKLIM-RW). 
+                    Aus radarbasierten Niederschlagsabschätzungen, welche zusätzlich an die Niederschlagsmessungen von Bodenstationen angeeicht wurden,
+                    resultieren summierte stündlich Niederschläge mit 11 verschiedenen Dauerstufen (1, 2, 3, 4, 6, 9, 12, 18, 24, 48 und 72 Stunden).
+                    
+                    Zeitlich und örtlich zusammenhängende Niederschlagsereignisse, welche einen bestimmten Schwellenwert überschreiten
+                    (DWD Warnstufe  für Unwetter (W) oder Jährlichkeit berechnet aus den RADKLIM-RW Daten (T)), werden im Katalog zusammengefasst und als 
+                    Niederschlagsobjekte aufgeführt. Die nachfolgende Grafik zeigt wahlweise die Niederschlagsereignisse welche über der DWD Warnstufe 3 für Unwetter (W3) oder über einer Jährlichkeit von t = 5 lagen.
+                    
+                    Hinweis auf das Starkregenereignis am 29.06.2021 --> Innenstadt Viersen-Dülken
+                    
+                    Für weitere Informationen siehe  <a href="https://www.dwd.de/DE/leistungen/catrare/catrare.html" target="_blank">DWD Kataloge der Starkregenereignisse (CatRaRE)</a>            
+                
+                </div>
+    
+        </div>                     
+                                
+                
+
+                
+                <script type="text/javascript">
+                function switchVisible0() {
+                            if (document.getElementById('chart')) {
+                                if (document.getElementById('chart').style.display == 'none') {
+                                    document.getElementById('chart').style.display = 'block';
+                                    document.getElementById('chart0').style.display = 'none';
+                                }
+                                else {
+                                    document.getElementById('chart').style.display = 'block';
+                                    document.getElementById('chart0').style.display = 'none';
+                                    }}}
+                </script>
+                
+                <script type="text/javascript">
+                function switchVisible01() {
+                            if (document.getElementById('chart0')) {
+                                if (document.getElementById('chart0').style.display == 'none') {
+                                    document.getElementById('chart0').style.display = 'block';
+                                    document.getElementById('chart').style.display = 'none';
+                                    }
+                                else {
+                                    document.getElementById('chart0').style.display = 'block';
+                                    document.getElementById('chart').style.display = 'none';
+                                    }}}
+                </script>
+
+    
+                
+
+                <a href="javascript: void(0);" onClick="toggle('qp13')">
+                <div class="header-6">
+                <h6 class="text-left">
+                Ergänzende Erkenntnisse aus detaillierter LANUV-Studie
+                </h6>   
+                </div>
+                </a>
+
+                <p id = "qp13" style="display:block">
+                Da sich Starkregenereignisse oft innerhalb sehr kurzer Zeit abspielen, 
+                ist die Entwicklung der Häufigkeit und Schwere der Ereignisse statistisch schwer darzustellen. 
+                Die LANUV-Studie <a href="https://www.lanuv.nrw.de/fileadmin/lanuv/klima/pdf/ExUS_Bericht_1a.pdf" target="_blank">ExUS 2020 – Umfassende Analyse der Niederschlagsentwicklung in Nordrheinwestfalen (2021)</a> 
+                wertet detailliert die Niederschlagsentwicklung der letzten Jahrzehnte (1961-2018) in NRW, insbesondere im Hinblick 
+                auf Starkregenereignisse aus. In Bezug auf längere Dauerstufen, also längere Zeiträumen auf die sich die Messung eines 
+                Regenereignisses bezieht, z. B. auf sogenannte „Starkregentage“, lässt sich hier kein eindeutiges Trendverhalten ableiten. 
+                Je kürzer jedoch die betrachteten Dauerstufen sind (z. B. 1 h - 12 h), desto signifikanter zeigt sich ein Trend zur Zunahme 
+                der Anzahl von Starkregenereignissen. Dies gilt auch bezogen auf sogenannte „Seltene oder extreme Starkregenereignisse“, 
+                also besonders schwere Starkregenereignisse mit einer Starkregenindexzahl von mindestens 7 (T = 100a). Für den Zeitraum von 
+                2001-2018 verstärkt sich dieser Trend in NRW.
+                </p>
+
+                 </div>
+               </div>
+                  				
+                
+<!╌################╌>
+<!╌################╌>
+
+
+    		                   
+    <!-- plotly CDN -->
+
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script type="text/javascript">
+        var graphs = {{ graphJSON | safe}};
+        Plotly.plot("chart", graphs,{});
+
+        var graphs0 = {{ graph0JSON | safe}};
+        Plotly.plot("chart0", graphs0,{});
+
+        var graphs1 = {{ graph1JSON | safe}};
+        Plotly.plot("chart1", graphs1,{});
+
+        var graphs2 = {{ graph2JSON | safe}};
+        Plotly.plot("chart2", graphs2,{});
+       
+        var graphs3 = {{ graph3JSON | safe}};
+        Plotly.plot("chart3", graphs3,{});
+    
+        var graphs5 = {{ graph5JSON | safe}};
+        Plotly.plot("chart5", graphs5,{});
+        
+    	var graphs8 = {{ graph8JSON | safe}};
+        Plotly.plot("chart8", graphs8,{});
+    	
+    	var graphs9 = {{ graph9JSON | safe}};
+        Plotly.plot("chart9", graphs9,{});
+    
+    	var graphs10 = {{ graph10JSON | safe}};
+        Plotly.plot("chart10", graphs10,{});
+
+    	var graphs11 = {{ graph11JSON | safe}};
+        Plotly.plot("chart11", graphs11,{});
+
+    	var graphs12 = {{ graph12JSON | safe}};
+        Plotly.plot("chart12", graphs12,{});
+        
+    	var graphs13 = {{ graph13JSON | safe}};
+        Plotly.plot("chart13", graphs13,{});
+
+    	var graphs14 = {{ graph14JSON | safe}};
+        Plotly.plot("chart14", graphs14,{});
+
+    	var graphs15 = {{ graph15JSON | safe}};
+        Plotly.plot("chart15", graphs15,{});
+    
+    	var graphs16 = {{ graph16JSON | safe}};
+        Plotly.plot("chart16", graphs16,{});
+
+    	var graphs17 = {{ graph17JSON | safe}};
+        Plotly.plot("chart17", graphs17,{});
+        
+            </script>    
+ 
+ 
+ 
+ 
+
+    
+        
+    {% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

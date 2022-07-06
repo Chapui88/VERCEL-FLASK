@@ -1,0 +1,2 @@
+CACHE MANIFEST
+{{ url_for('static', filename='logo.png') }}
